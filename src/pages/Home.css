@@ -1,0 +1,240 @@
+/* ── Hero ─────────────────────────────── */
+.hero {
+  position: relative;
+  min-height: calc(100vh - 80px);
+  background-image: url('/storeSign-1140x641.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(30, 12, 2, 0.58);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  max-width: 640px;
+}
+
+.hero-label {
+  font-size: 0.85rem;
+  letter-spacing: 1.5px;
+  color: var(--sand);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.hero-content h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  color: #fff;
+  line-height: 1.15;
+  margin-bottom: 1.25rem;
+}
+
+.hero-sub {
+  font-size: 1.1rem;
+  color: var(--sand-light);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  max-width: 480px;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero-btns .btn-outline {
+  color: #fff;
+  border-color: rgba(255,255,255,0.7);
+}
+
+.hero-btns .btn-outline:hover {
+  background-color: rgba(255,255,255,0.15);
+  border-color: #fff;
+}
+
+/* ── Features ─────────────────────────── */
+.features-section {
+  background-color: var(--warm-white);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.feature-card {
+  background-color: var(--cream);
+  border: 1px solid var(--sand);
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(107, 66, 38, 0.1);
+}
+
+.feature-icon {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--brown-dark);
+}
+
+.feature-card p {
+  color: var(--text-mid);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* ── Gallery Preview ──────────────────── */
+.gallery-preview-section {
+  background-color: var(--cream);
+}
+
+.preview-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 220px);
+  gap: 1rem;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.preview-card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.preview-card.amethyst {
+  background: linear-gradient(135deg, #6a0dad, #9b59b6, #c39bd3);
+}
+.preview-card.turquoise {
+  background: linear-gradient(135deg, #006d6d, #1abc9c, #76d7c4);
+}
+.preview-card.pearls {
+  background: linear-gradient(135deg, #d4c5a9, #f0e8d8, #e8dcc8);
+}
+.preview-card.mixed {
+  background: linear-gradient(135deg, #c0634f, #e8a87c, #f2e6d0);
+}
+
+.preview-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(50, 20, 5, 0.3);
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem 1.25rem;
+  transition: background 0.3s;
+}
+
+.preview-card:hover .preview-overlay {
+  background: rgba(50, 20, 5, 0.15);
+}
+
+.preview-overlay span {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.preview-cta {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+/* ── About Snippet ────────────────────── */
+.about-snippet-section {
+  background-color: var(--sand-light);
+}
+
+.about-snippet-inner {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.about-snippet-text h2 {
+  font-size: 2rem;
+}
+
+.about-snippet-text p {
+  color: var(--text-mid);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.about-snippet-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.snippet-photo {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 16px 48px rgba(107, 66, 38, 0.22);
+}
+
+/* ── CTA Banner ───────────────────────── */
+.cta-banner {
+  background: linear-gradient(135deg, var(--brown-dark), var(--brown));
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.cta-banner h2 {
+  color: var(--sand-light);
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.cta-banner p {
+  color: var(--sand);
+  margin-bottom: 2rem;
+  font-size: 1.05rem;
+}
+
+/* ── Responsive ───────────────────────── */
+@media (max-width: 900px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-snippet-inner {
+    grid-template-columns: 1fr;
+  }
+  .about-snippet-visual {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .preview-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 160px);
+  }
+}

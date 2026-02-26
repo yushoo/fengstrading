@@ -1,0 +1,125 @@
+.page-header {
+  background: linear-gradient(135deg, var(--brown-dark), var(--brown));
+  padding: 4rem 0 3.5rem;
+  text-align: center;
+}
+
+.page-header h1 {
+  color: var(--sand-light);
+  font-size: 2.8rem;
+}
+
+.page-header p {
+  color: var(--sand);
+  font-size: 1.05rem;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.contact-info h2 {
+  font-size: 1.7rem;
+}
+
+.info-block {
+  margin-bottom: 1.5rem;
+}
+
+.info-block h4 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--terracotta);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.3rem;
+}
+
+.info-block p {
+  color: var(--text-mid);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.info-block a {
+  color: var(--text-mid);
+  transition: color 0.2s;
+}
+
+.info-block a:hover {
+  color: var(--terracotta);
+}
+
+/* Form */
+.contact-form-wrapper h2 {
+  font-size: 1.7rem;
+}
+
+.contact-form {
+  margin-top: 0.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-mid);
+  margin-bottom: 0.4rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1.5px solid var(--sand);
+  border-radius: 10px;
+  background-color: var(--warm-white);
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.95rem;
+  color: var(--text-dark);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--terracotta);
+  box-shadow: 0 0 0 3px rgba(192, 99, 79, 0.15);
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.85rem;
+  font-size: 1rem;
+}
+
+.success-msg {
+  background-color: var(--sand-light);
+  border: 1px solid var(--sand);
+  border-left: 4px solid var(--sage);
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+.success-msg p {
+  color: var(--brown-dark);
+  font-size: 1rem;
+}
+
+@media (max-width: 900px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+}

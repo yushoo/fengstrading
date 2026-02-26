@@ -1,0 +1,137 @@
+.page-header {
+  background: linear-gradient(135deg, var(--brown-dark), var(--brown));
+  padding: 4rem 0 3.5rem;
+  text-align: center;
+}
+
+.page-header h1 {
+  color: var(--sand-light);
+  font-size: 2.8rem;
+}
+
+.page-header p {
+  color: var(--sand);
+  font-size: 1.05rem;
+}
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.about-text h2 {
+  font-size: 1.9rem;
+}
+
+.about-text p {
+  color: var(--text-mid);
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-top: 0.75rem;
+}
+
+.about-photo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.about-photo {
+  width: 100%;
+  max-width: 340px;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 16px 48px rgba(107, 66, 38, 0.2);
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.stat-card {
+  background-color: var(--sand-light);
+  border: 1px solid var(--sand);
+  border-radius: 14px;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+.stat-card h3 {
+  font-size: 1.9rem;
+  color: var(--terracotta);
+  margin-bottom: 0.25rem;
+}
+
+.stat-card p {
+  color: var(--text-mid);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* Values */
+.about-values-section {
+  background-color: var(--sand-light);
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.value-card {
+  background-color: var(--warm-white);
+  border-left: 4px solid var(--terracotta);
+  border-radius: 12px;
+  padding: 1.75rem;
+}
+
+.value-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.6rem;
+  color: var(--brown-dark);
+}
+
+.value-card p {
+  color: var(--text-mid);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.cta-banner {
+  background: linear-gradient(135deg, var(--brown-dark), var(--brown));
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.cta-banner h2 {
+  color: var(--sand-light);
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.cta-banner p {
+  color: var(--sand);
+  margin-bottom: 2rem;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 900px) {
+  .about-layout {
+    grid-template-columns: 1fr;
+  }
+  .about-photo-wrap {
+    display: none;
+  }
+  .about-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+}
