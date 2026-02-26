@@ -1,19 +1,21 @@
+/* ── Page Header ── */
 .page-header {
-  background: linear-gradient(135deg, var(--brown-dark), var(--brown));
+  background: linear-gradient(135deg, var(--jade-dark) 0%, var(--jade) 100%);
   padding: 4rem 0 3.5rem;
   text-align: center;
 }
 
 .page-header h1 {
-  color: var(--sand-light);
+  color: #fff;
   font-size: 2.8rem;
 }
 
 .page-header p {
-  color: var(--sand);
+  color: rgba(255,255,255,0.75);
   font-size: 1.05rem;
 }
 
+/* ── Contact Layout ── */
 .contact-layout {
   display: grid;
   grid-template-columns: 1fr 1.6fr;
@@ -25,6 +27,7 @@
   font-size: 1.7rem;
 }
 
+/* ── Info Blocks ── */
 .info-block {
   margin-bottom: 1.5rem;
 }
@@ -33,7 +36,7 @@
   font-family: 'Nunito', sans-serif;
   font-weight: 700;
   font-size: 0.85rem;
-  color: var(--terracotta);
+  color: var(--jade);
   text-transform: uppercase;
   letter-spacing: 0.5px;
   margin-bottom: 0.3rem;
@@ -51,10 +54,10 @@
 }
 
 .info-block a:hover {
-  color: var(--terracotta);
+  color: var(--jade);
 }
 
-/* Form */
+/* ── Form ── */
 .contact-form-wrapper h2 {
   font-size: 1.7rem;
 }
@@ -79,7 +82,7 @@
 .form-group textarea {
   width: 100%;
   padding: 0.75rem 1rem;
-  border: 1.5px solid var(--sand);
+  border: 1.5px solid var(--mint-mid);
   border-radius: 10px;
   background-color: var(--warm-white);
   font-family: 'Nunito', sans-serif;
@@ -91,8 +94,8 @@
 
 .form-group input:focus,
 .form-group textarea:focus {
-  border-color: var(--terracotta);
-  box-shadow: 0 0 0 3px rgba(192, 99, 79, 0.15);
+  border-color: var(--jade);
+  box-shadow: 0 0 0 3px rgba(46,139,106,0.15);
 }
 
 .form-group textarea {
@@ -105,19 +108,21 @@
   font-size: 1rem;
 }
 
+/* ── Success Message ── */
 .success-msg {
-  background-color: var(--sand-light);
-  border: 1px solid var(--sand);
-  border-left: 4px solid var(--sage);
+  background-color: var(--mint);
+  border: 1px solid var(--mint-mid);
+  border-left: 4px solid var(--jade);
   border-radius: 10px;
   padding: 1.5rem;
 }
 
 .success-msg p {
-  color: var(--brown-dark);
+  color: var(--jade-dark);
   font-size: 1rem;
 }
 
+/* ── Responsive ── */
 @media (max-width: 900px) {
   .contact-layout {
     grid-template-columns: 1fr;

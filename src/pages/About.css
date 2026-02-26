@@ -1,19 +1,21 @@
+/* ── Page Header ── */
 .page-header {
-  background: linear-gradient(135deg, var(--brown-dark), var(--brown));
+  background: linear-gradient(135deg, var(--jade-dark) 0%, var(--jade) 100%);
   padding: 4rem 0 3.5rem;
   text-align: center;
 }
 
 .page-header h1 {
-  color: var(--sand-light);
+  color: #fff;
   font-size: 2.8rem;
 }
 
 .page-header p {
-  color: var(--sand);
+  color: rgba(255,255,255,0.75);
   font-size: 1.05rem;
 }
 
+/* ── Story Layout ── */
 .about-layout {
   display: grid;
   grid-template-columns: 1.4fr 1fr;
@@ -43,9 +45,10 @@
   max-width: 340px;
   border-radius: 16px;
   object-fit: cover;
-  box-shadow: 0 16px 48px rgba(107, 66, 38, 0.2);
+  box-shadow: 0 16px 48px rgba(46,139,106,0.2);
 }
 
+/* ── Stats Strip ── */
 .about-stats {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -54,8 +57,8 @@
 }
 
 .stat-card {
-  background-color: var(--sand-light);
-  border: 1px solid var(--sand);
+  background-color: var(--mint);
+  border: 1px solid var(--mint-mid);
   border-radius: 14px;
   padding: 1.5rem 1rem;
   text-align: center;
@@ -63,7 +66,7 @@
 
 .stat-card h3 {
   font-size: 1.9rem;
-  color: var(--terracotta);
+  color: var(--jade);
   margin-bottom: 0.25rem;
 }
 
@@ -73,7 +76,7 @@
   font-weight: 600;
 }
 
-/* Values */
+/* ── Values ── */
 .about-values-section {
   background-color: var(--sand-light);
 }
@@ -86,7 +89,7 @@
 
 .value-card {
   background-color: var(--warm-white);
-  border-left: 4px solid var(--terracotta);
+  border-left: 4px solid var(--jade);
   border-radius: 12px;
   padding: 1.75rem;
 }
@@ -94,7 +97,7 @@
 .value-card h3 {
   font-size: 1.1rem;
   margin-bottom: 0.6rem;
-  color: var(--brown-dark);
+  color: var(--text-dark);
 }
 
 .value-card p {
@@ -103,24 +106,26 @@
   line-height: 1.65;
 }
 
+/* ── CTA Banner ── */
 .cta-banner {
-  background: linear-gradient(135deg, var(--brown-dark), var(--brown));
+  background: linear-gradient(135deg, var(--jade-dark) 0%, var(--jade) 100%);
   padding: 4rem 0;
   text-align: center;
 }
 
 .cta-banner h2 {
-  color: var(--sand-light);
+  color: #fff;
   font-size: 2rem;
   margin-bottom: 0.5rem;
 }
 
 .cta-banner p {
-  color: var(--sand);
+  color: rgba(255,255,255,0.8);
   margin-bottom: 2rem;
   font-size: 1.05rem;
 }
 
+/* ── Responsive ── */
 @media (max-width: 900px) {
   .about-layout {
     grid-template-columns: 1fr;
