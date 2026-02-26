@@ -9,10 +9,12 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="navbar-container container">
         <NavLink to="/" className="navbar-logo" onClick={() => setMenuOpen(false)}>
-          <img src="/fengs_trading_logo.jpg" alt="Feng's Trading logo" className="logo-img" />
+          <div className="logo-badge">
+            <img src="/fengs_trading_logo.jpg" alt="Feng's Trading logo" className="logo-img" />
+          </div>
           <div className="logo-text">
             <span className="logo-main">Feng's Trading</span>
-            <span className="logo-tagline">Better Service • Better Quality</span>
+            <span className="logo-tagline">Beads · Gems · Minerals</span>
           </div>
         </NavLink>
 

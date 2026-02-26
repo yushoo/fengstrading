@@ -1,32 +1,57 @@
-/* Warm & Earthy Theme — Feng's Trading */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Nunito:wght@300;400;500;600;700&display=swap');
+/* Jade & Earth (Cozy Edition) — Feng's Trading */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Nunito:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-  --cream: #fdf6ed;
-  --warm-white: #fffaf4;
-  --terracotta: #c0634f;
-  --terracotta-light: #d4816d;
-  --terracotta-dark: #a0503d;
-  --brown: #6b4226;
-  --brown-light: #8b5e3c;
-  --brown-dark: #4a2c18;
-  --sand: #e8d5b7;
-  --sand-light: #f2e6d0;
-  --sage: #8a9e7a;
-  --text-dark: #3a2010;
-  --text-mid: #6b4a30;
-  --text-light: #9c7a5a;
+  /* Backgrounds */
+  --cream:         #FFF8EE;
+  --warm-white:    #FFFDF9;
+  --mint:          #E6F5EE;
+  --mint-mid:      #B8DFD0;
+  --sand:          #EDE0CC;
+  --sand-light:    #F7F0E3;
+  --peach:         #F5D5B8;
+  --amber-light:   #FBE8B0;
+
+  /* Primary — Jade */
+  --jade:          #2E8B6A;
+  --jade-light:    #3DAB84;
+  --jade-dark:     #1E6048;
+
+  /* Aliases so existing files keep working */
+  --terracotta:       #2E8B6A;
+  --terracotta-light: #3DAB84;
+  --terracotta-dark:  #1E6048;
+  --brown:            #6B4020;
+  --brown-light:      #8B5E3C;
+  --brown-dark:       #3A2010;
+  --sage:             #3DAB84;
+
+  /* Accents */
+  --red:           #C03838;
+  --red-light:     #D45050;
+  --amber:         #E8A840;
+  --sienna:        #B87040;
+
+  /* Text */
+  --text-dark:     #3A2010;
+  --text-mid:      #6B4020;
+  --text-light:    #A07050;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* ── Animations ── */
+@keyframes floatUp {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-6px); }
+}
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  25%       { transform: rotate(-12deg) scale(1.15); }
+  75%       { transform: rotate(12deg) scale(1.15); }
 }
 
-html {
-  scroll-behavior: smooth;
-}
+/* ── Reset ── */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
 
 body {
   font-family: 'Nunito', sans-serif;
@@ -40,15 +65,8 @@ h1, h2, h3, h4 {
   color: var(--brown-dark);
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-}
+a { text-decoration: none; color: inherit; }
+img { max-width: 100%; display: block; }
 
 .container {
   max-width: 1100px;
@@ -56,69 +74,104 @@ img {
   padding: 0 1.5rem;
 }
 
+/* ── Buttons ── */
 .btn {
   display: inline-block;
-  padding: 0.75rem 1.75rem;
-  border-radius: 30px;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
   font-family: 'Nunito', sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 0.95rem;
   cursor: pointer;
   transition: all 0.25s ease;
   border: none;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.2px;
 }
 
 .btn-primary {
-  background-color: var(--terracotta);
+  background-color: var(--jade);
   color: #fff;
+  box-shadow: 0 4px 14px rgba(46,139,106,0.3);
 }
-
 .btn-primary:hover {
-  background-color: var(--terracotta-dark);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(192, 99, 79, 0.4);
+  background-color: var(--jade-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(46,139,106,0.45);
 }
 
 .btn-outline {
   background-color: transparent;
-  color: var(--terracotta);
-  border: 2px solid var(--terracotta);
+  color: var(--jade);
+  border: 2.5px solid var(--jade);
 }
-
 .btn-outline:hover {
-  background-color: var(--terracotta);
+  background-color: var(--jade);
   color: #fff;
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(46,139,106,0.35);
 }
 
-.page {
-  padding-top: 80px;
+.btn-red {
+  background-color: var(--red);
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(192,56,56,0.3);
+}
+.btn-red:hover {
+  background-color: #a02828;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(192,56,56,0.4);
 }
 
-.section {
-  padding: 5rem 0;
+.btn-amber {
+  background-color: var(--amber);
+  color: var(--text-dark);
+  box-shadow: 0 4px 14px rgba(232,168,64,0.35);
+}
+.btn-amber:hover {
+  background-color: #d49530;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(232,168,64,0.5);
 }
 
-.section-header {
-  text-align: center;
-  margin-bottom: 3rem;
-}
+/* ── Layout ── */
+.page { padding-top: 80px; }
+.section { padding: 5rem 0; }
 
-.section-header h2 {
-  font-size: 2.2rem;
-  margin-bottom: 0.5rem;
-}
+.section-header { text-align: center; margin-bottom: 3rem; }
+.section-header h2 { font-size: 2.2rem; margin-bottom: 0.4rem; }
+.section-header p  { color: var(--text-light); font-size: 1rem; font-weight: 500; }
 
-.section-header p {
-  color: var(--text-light);
-  font-size: 1.05rem;
-}
-
+/* ── Dividers ── */
 .divider {
   width: 60px;
   height: 3px;
-  background-color: var(--terracotta);
+  background-color: var(--jade);
   margin: 0.75rem auto 1rem;
   border-radius: 2px;
 }
+
+.pill-divider {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.6rem 0 0.8rem;
+  font-size: 1.1rem;
+}
+
+.pill-divider-line {
+  width: 40px;
+  height: 2.5px;
+  background: var(--jade);
+  border-radius: 2px;
+  display: inline-block;
+}
+
+/* ── Wave divider ── */
+.wave-divider {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  margin-bottom: -1px;
+}
+.wave-divider svg { display: block; }
