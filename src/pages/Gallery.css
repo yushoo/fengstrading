@@ -55,6 +55,13 @@
   position: relative;
 }
 
+.gallery-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
 .placeholder-gem {
   font-size: 2.5rem;
   opacity: 0.4;
