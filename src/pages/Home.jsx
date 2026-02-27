@@ -29,8 +29,11 @@ export default function Home() {
             </div>
           </div>
           <div className="hero-visual">
-            <div className="hero-logo-card">
-              <img src="/fengs_trading_logo.jpg" alt="Feng's Trading" />
+            <div className="hero-bg-logo-container">
+              <img src="/fengs_trading_logo.jpg" alt="Feng's Trading logo" className="hero-bg-logo-full" />
+            </div>
+            <div className="hero-logo-card hero-large">
+              <img src="/parents-at-gemshow.jpg" alt="Feng's Trading family owners" className="hero-family-photo" />
             </div>
           </div>
         </div>
@@ -158,6 +161,36 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── Family Photo ── */}
+      <section className="family-section">
+        <div className="container family-inner">
+          <div className="family-content">
+            <h2>A Family Business Built on Passion</h2>
+            <div className="pill-divider">
+              <span className="pill-divider-line" />
+              <span>❤️</span>
+              <span className="pill-divider-line" />
+            </div>
+            <p>
+              What started as a passion for beautiful gemstones and crystals has 
+              grown into a thriving family business. At Feng's Trading, we're proud 
+              to share our love for quality beads and minerals with the Houston community.
+            </p>
+            <p style={{ marginTop: '1rem' }}>
+              Our family's dedication to excellence has made us a trusted destination 
+              for bead enthusiasts and jewelry makers for over two decades.
+            </p>
+          </div>
+          <div className="family-photo">
+            <img
+              src="/parents.jpg"
+              alt="Feng's Trading family at the store"
+              className="parents-photo"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* ── CTA Banner ── */}
       <section className="cta-banner">
         <div className="cta-overlay" />
@@ -173,7 +206,7 @@ export default function Home() {
         <div className="container visit-inner">
           <div className="visit-photo">
             <img
-              src="/storeFront-e1567374800362-1140x2027.jpg"
+              src="/store-front-2.jpg"
               alt="Feng's Trading storefront"
             />
           </div>

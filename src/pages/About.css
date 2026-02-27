@@ -125,6 +125,43 @@
   font-size: 1.05rem;
 }
 
+/* ── Gemshow Section ─────────────────── */
+.gemshow-section {
+  background: linear-gradient(135deg, var(--cream) 0%, var(--mint-light) 100%);
+}
+
+.gemshow-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.gemshow-item {
+  text-align: center;
+}
+
+.gemshow-photo {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  height: 300px;
+  box-shadow: 0 12px 40px rgba(61,171,132,0.18);
+  transition: transform 0.3s ease;
+}
+
+.gemshow-photo:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(61,171,132,0.25);
+}
+
+.gemshow-caption {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: var(--text-mid);
+  font-weight: 600;
+}
+
 /* ── Responsive ── */
 @media (max-width: 900px) {
   .about-layout {
@@ -138,5 +175,12 @@
   }
   .values-grid {
     grid-template-columns: 1fr;
+  }
+  .gemshow-gallery {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .gemshow-photo {
+    height: 250px;
   }
 }

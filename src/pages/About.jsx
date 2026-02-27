@@ -39,8 +39,8 @@ export default function About() {
           </div>
           <div className="about-photo-wrap">
             <img
-              src="/storeFront-e1567374800362-1140x2027.jpg"
-              alt="Feng's Trading storefront"
+              src="/dad-sitting.jpg"
+              alt="Founder with gemstones"
               className="about-photo"
             />
           </div>
@@ -63,6 +63,31 @@ export default function About() {
           <div className="stat-card">
             <h3>HOU</h3>
             <p>Houston, Texas</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Gemshow Booths */}
+      <section className="section gemshow-section">
+        <div className="container">
+          <div className="section-header">
+            <h2>We're Not Just a Store</h2>
+            <div className="divider" />
+            <p>You can also find us at gem and mineral shows around the region.</p>
+          </div>
+          <div className="gemshow-gallery">
+            <div className="gemshow-item">
+              <img src="/gemshow.jpg" alt="Feng's Trading gem show booth" className="gemshow-photo" />
+              <p className="gemshow-caption">Our Gem Show Booth</p>
+            </div>
+            <div className="gemshow-item">
+              <img src="/gemshow2.jpg" alt="Feng's Trading gem show display" className="gemshow-photo" />
+              <p className="gemshow-caption">Quality Gemstones on Display</p>
+            </div>
+            <div className="gemshow-item">
+              <img src="/parents-at-gemshow.jpg" alt="Owners at gem show" className="gemshow-photo" />
+              <p className="gemshow-caption">Meet Us at the Shows</p>
+            </div>
           </div>
         </div>
       </section>
