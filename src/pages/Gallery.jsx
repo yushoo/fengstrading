@@ -43,6 +43,15 @@ const bangles = [
 const pearls = [
   { id: 1, label: 'Pearl Collection', category: 'Pearl', image: '/pearls/pearls_1.jpg' },
   { id: 2, label: 'Pearl Collection', category: 'Pearl', image: '/pearls/pearls_2.jpg' },
+  { id: 3, label: 'Fresh Water Pearl', category: 'Pearl', image: '/pearls/fresh_water_pearl.jpg' },
+]
+
+const gemstones = [
+  { id: 1, label: 'Labradorite', category: 'Labradorite', image: '/gemstones/labradorite.jpg' },
+  { id: 2, label: 'Sunstone', category: 'Sunstone', image: '/gemstones/sunstones.jpg' },
+  { id: 3, label: 'Fluorite', category: 'Fluorite', image: '/gemstones/fluorite.jpg' },
+  { id: 4, label: 'Aquamarine', category: 'Aquamarine', image: '/gemstones/aquamarine.jpg' },
+  { id: 5, label: 'Kyanite', category: 'Kyanite', image: '/gemstones/kyanite.jpg' },
 ]
 
 const turquoise = [
@@ -59,6 +68,7 @@ const allSections = [
   { title: 'Turquoise', subtitle: 'Natural turquoise pieces.', items: turquoise, bg: 'var(--mint, #f0f9f4)' },
   { title: 'Agate', subtitle: 'Natural agate stones and beads.', items: agates, bg: null },
   { title: 'Mexican Fire Opal', subtitle: 'Raw and polished Mexican fire opals.', items: opals, bg: 'var(--mint, #f0f9f4)' },
+  { title: 'Gemstones', subtitle: 'Labradorite, sunstone, fluorite, and more.', items: gemstones, bg: null },
 ]
 
 function filter(items, query) {
