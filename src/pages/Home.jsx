@@ -94,20 +94,20 @@ export default function Home() {
           </div>
           <div className="preview-grid">
             <div className="preview-card">
-              <div className="preview-card-bg amethyst-bg" />
-              <div className="preview-label">💜 Amethyst</div>
+              <img src="/bracelets/collection_bracelets.jpg" alt="Crystal Bracelets" className="preview-card-img" />
+              <div className="preview-label">Crystal Bracelets</div>
             </div>
             <div className="preview-card">
-              <div className="preview-card-bg turquoise-bg" />
-              <div className="preview-label">🩵 Turquoise</div>
+              <img src="/charms/jade_assorted_charms.jpg" alt="Jade Charms" className="preview-card-img" />
+              <div className="preview-label">Jade Charms</div>
             </div>
             <div className="preview-card">
-              <div className="preview-card-bg pearls-bg" />
-              <div className="preview-label">🤍 Pearls</div>
+              <img src="/pearls/pearls_1.jpg" alt="Pearls" className="preview-card-img" />
+              <div className="preview-label">Pearls</div>
             </div>
             <div className="preview-card">
-              <div className="preview-card-bg mixed-bg" />
-              <div className="preview-label">🟡 Mixed Beads</div>
+              <img src="/turquoise/turquoise_1.jpg" alt="Turquoise" className="preview-card-img" />
+              <div className="preview-label">Turquoise</div>
             </div>
           </div>
           <div className="preview-cta">

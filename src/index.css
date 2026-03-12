@@ -134,7 +134,7 @@ img { max-width: 100%; display: block; }
 }
 
 /* ── Layout ── */
-.page { padding-top: 80px; }
+.page { }
 .section { padding: 5rem 0; }
 
 .section-header { text-align: center; margin-bottom: 3rem; }

@@ -15,6 +15,37 @@
   font-size: 1.05rem;
 }
 
+/* ── Search ── */
+.gallery-search {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  margin-top: 1.25rem;
+}
+
+.gallery-search-input {
+  padding: 0.55rem 2.5rem 0.55rem 1rem;
+  border-radius: 50px;
+  border: none;
+  font-size: 0.9rem;
+  width: 260px;
+  outline: none;
+  background: rgba(255,255,255,0.92);
+  color: var(--text-dark);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.gallery-search-clear {
+  position: absolute;
+  right: 0.65rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: var(--text-light);
+  line-height: 1;
+}
+
 /* ── Gallery Note ── */
 .gallery-note {
   background-color: var(--mint);

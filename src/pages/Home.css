@@ -120,7 +120,6 @@
     0 20px 60px rgba(184,112,64,0.18),
     0 0 0 6px var(--cream),
     0 0 0 10px var(--mint-mid);
-  animation: floatUp 4s ease-in-out infinite;
   overflow: hidden;
   position: relative;
   z-index: 2;
@@ -240,20 +239,17 @@
   box-shadow: 0 14px 36px rgba(58,32,16,0.18);
 }
 
-.preview-card-bg {
+.preview-card-img {
   width: 100%;
   aspect-ratio: 1;
+  object-fit: cover;
+  display: block;
   transition: transform 0.4s ease;
 }
 
-.preview-card:hover .preview-card-bg {
+.preview-card:hover .preview-card-img {
   transform: scale(1.06);
 }
-
-.preview-card-bg.amethyst-bg  { background: linear-gradient(135deg, #7B52A0, #A882D0, #D0B0F0); }
-.preview-card-bg.turquoise-bg { background: linear-gradient(135deg, #1A8080, #30C0C0, #88E8E8); }
-.preview-card-bg.pearls-bg    { background: linear-gradient(135deg, #C8A87A, #E8D0A8, #F8EED8); }
-.preview-card-bg.mixed-bg     { background: linear-gradient(135deg, #A06830, #D8A050, #F0CC88); }
 
 .preview-label {
   position: absolute;

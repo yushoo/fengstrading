@@ -115,7 +115,7 @@ export default function About() {
             </div>
             <div className="value-card">
               <h3>Friendly Service</h3>
-              <p>We treat every customer like family. Our knowledgeable staff is always ready to help you find what you need.</p>
+              <p>We treat every customer like family. Our parents run the store and shows, with occasional help from my brother and me. We're always ready to help you find what you need.</p>
             </div>
           </div>
         </div>

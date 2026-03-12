@@ -1,12 +1,7 @@
 .navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   height: 80px;
   background-color: var(--warm-white);
   border-bottom: 2px solid var(--peach);
-  z-index: 1000;
   box-shadow: 0 4px 20px rgba(184,112,64,0.10);
 }
 
