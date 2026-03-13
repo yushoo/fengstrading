@@ -44,6 +44,14 @@ const pearls = [
   { id: 1, label: 'Pearl Collection', category: 'Pearl', image: '/pearls/pearls_1.jpg' },
   { id: 2, label: 'Pearl Collection', category: 'Pearl', image: '/pearls/pearls_2.jpg' },
   { id: 3, label: 'Fresh Water Pearl', category: 'Pearl', image: '/pearls/fresh_water_pearl.jpg' },
+  { id: 4, label: 'Double-Drilled Freshwater Pearl', category: 'Pearl', image: '/pearls/double_drilled_fw_pearl.jpg' },
+  { id: 5, label: 'Bigger-Hole Freshwater Pearl', category: 'Pearl', image: '/pearls/bigger_hole_fw_pearl.jpg' },
+  { id: 6, label: 'Freshwater Pearl Strands', category: 'Pearl', image: '/pearls/fw_pearl_strands.jpg' },
+  { id: 7, label: 'Freshwater Pearl Rice', category: 'Pearl', image: '/pearls/fw_pearl_rice.jpg' },
+]
+
+const amber = [
+  { id: 1, label: 'Amber Chips', category: 'Amber', image: '/amber/amber_chips.jpg' },
 ]
 
 const gemstones = [
@@ -66,8 +74,9 @@ const allSections = [
   { title: 'Jade Bangles', subtitle: 'Traditional jade bangles in a variety of styles.', items: bangles, bg: 'var(--mint, #f0f9f4)' },
   { title: 'Pearls', subtitle: 'Beautiful natural pearl pieces.', items: pearls, bg: null },
   { title: 'Turquoise', subtitle: 'Natural turquoise pieces.', items: turquoise, bg: 'var(--mint, #f0f9f4)' },
-  { title: 'Agate', subtitle: 'Natural agate stones and beads.', items: agates, bg: null },
-  { title: 'Mexican Fire Opal', subtitle: 'Raw and polished Mexican fire opals.', items: opals, bg: 'var(--mint, #f0f9f4)' },
+  { title: 'Amber', subtitle: 'Natural amber pieces and chip strands.', items: amber, bg: null },
+  { title: 'Agate', subtitle: 'Natural agate stones and beads.', items: agates, bg: 'var(--mint, #f0f9f4)' },
+  { title: 'Mexican Fire Opal', subtitle: 'Raw and polished Mexican fire opals.', items: opals, bg: null },
   { title: 'Gemstones', subtitle: 'Labradorite, sunstone, fluorite, and more.', items: gemstones, bg: null },
 ]
 
