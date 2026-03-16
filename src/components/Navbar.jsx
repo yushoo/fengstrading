@@ -13,7 +13,7 @@ export default function Navbar() {
             <img src="/fengs_trading_logo.jpg" alt="Feng's Trading logo" className="logo-img" />
           </div>
           <div className="logo-text">
-            <span className="logo-main">Feng's Trading</span>
+            <span className="logo-main">Feng&apos;s Trading</span>
             <span className="logo-tagline">Beads · Gems · Minerals</span>
           </div>
         </NavLink>

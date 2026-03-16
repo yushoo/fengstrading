@@ -20,10 +20,10 @@ export default function About() {
             <h2>Our Story</h2>
             <div className="divider" style={{ margin: '0.75rem 0 1.25rem' }} />
             <p>
-              Feng's Trading was founded with a single mission: to bring beautiful,
+              Feng&apos;s Trading was founded with a single mission: to bring beautiful,
               high-quality beads and gemstones to Houston at prices everyone can
               appreciate. What started as a small family operation has grown into one
-              of Houston's most trusted bead shops.
+              of Houston&apos;s most trusted bead shops.
             </p>
             <p>
               Over more than two decades, we have built lasting relationships with
@@ -33,8 +33,8 @@ export default function About() {
             </p>
             <p>
               We serve hobbyists crafting personal jewelry, artisans running their own
-              shops, and wholesale buyers alike. No matter your needs, we're here to
-              help you find exactly what you're looking for.
+              shops, and wholesale buyers alike. No matter your needs, we&apos;re here to
+              help you find exactly what you&apos;re looking for.
             </p>
           </div>
           <div className="about-photo-wrap">
@@ -71,7 +71,7 @@ export default function About() {
       <section className="section gemshow-section">
         <div className="container">
           <div className="section-header">
-            <h2>We're Not Just a Store</h2>
+            <h2>We&apos;re Not Just a Store</h2>
             <div className="divider" />
             <p>You can also find us at gem and mineral shows around the region.</p>
           </div>
@@ -111,11 +111,11 @@ export default function About() {
             </div>
             <div className="value-card">
               <h3>Fair Pricing</h3>
-              <p>Beautiful beads shouldn't break the bank. We keep our prices fair for both hobbyists and wholesale buyers.</p>
+              <p>Beautiful beads shouldn&apos;t break the bank. We keep our prices fair for both hobbyists and wholesale buyers.</p>
             </div>
             <div className="value-card">
               <h3>Friendly Service</h3>
-              <p>We treat every customer like family. Our parents run the store and shows, with occasional help from my brother and me. We're always ready to help you find what you need.</p>
+              <p>We treat every customer like family. Our parents run the store and shows, with occasional help from my brother and me. We&apos;re always ready to help you find what you need.</p>
             </div>
           </div>
         </div>
@@ -125,7 +125,7 @@ export default function About() {
       <section className="cta-banner">
         <div className="container">
           <h2>Come visit us in Houston</h2>
-          <p>We'd love to welcome you to the store.</p>
+          <p>We&apos;d love to welcome you to the store.</p>
           <Link to="/contact" className="btn btn-primary">Find Us</Link>
         </div>
       </section>

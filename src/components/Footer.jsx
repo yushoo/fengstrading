@@ -6,9 +6,9 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-container container">
         <div className="footer-brand">
-          <h3>Feng's Trading</h3>
+          <h3>Feng&apos;s Trading</h3>
           <p>Better Service • Better Quality</p>
-          <p className="footer-tagline">Houston's trusted importer & wholesaler of beads, gemstones, and pearls for over 20 years.</p>
+          <p className="footer-tagline">Houston&apos;s trusted importer &amp; wholesaler of beads, gemstones, and pearls for over 20 years.</p>
         </div>
 
         <div className="footer-links">
@@ -31,7 +31,7 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>© {new Date().getFullYear()} Feng's Trading. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Feng&apos;s Trading. All rights reserved.</p>
       </div>
     </footer>
   )

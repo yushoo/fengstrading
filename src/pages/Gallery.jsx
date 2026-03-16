@@ -7,8 +7,11 @@ const agates = [
 ]
 
 const opals = [
-  { id: 1, label: 'Raw Mexican Fire Opal', category: 'Opal', image: '/gemstones/raw_mexican_fire_opal.jpg' },
-  { id: 2, label: 'Mexican Fire Opal Cabochon', category: 'Opal', image: '/gemstones/mexican_fire_opal_cabochon.jpg' },
+  { id: 1, label: 'Raw Mexican Fire Opal', category: 'Mexican Fire Opal', image: '/gemstones/raw_mexican_fire_opal.jpg' },
+  { id: 2, label: 'Mexican Fire Opal Cabochon', category: 'Mexican Fire Opal', image: '/gemstones/mexican_fire_opal_cabochon.jpg' },
+  { id: 3, label: 'AA Black Opal Bead Necklace', category: 'Black Opal', image: '/opals/aa_black_opal_necklace.jpg' },
+  { id: 4, label: 'AAT Black Opal Strands', category: 'Black Opal', image: '/opals/aat_black_opal_strands.jpg' },
+  { id: 5, label: 'White Opal Strands', category: 'White Opal', image: '/opals/white_opal_strands.jpg' },
 ]
 
 const bracelets = [
@@ -67,7 +70,7 @@ const allSections = [
   { title: 'Pearls', subtitle: 'Beautiful natural pearl pieces.', items: pearls, bg: null },
   { title: 'Turquoise', subtitle: 'Natural turquoise pieces.', items: turquoise, bg: 'var(--mint, #f0f9f4)' },
   { title: 'Agate', subtitle: 'Natural agate stones and beads.', items: agates, bg: null },
-  { title: 'Mexican Fire Opal', subtitle: 'Raw and polished Mexican fire opals.', items: opals, bg: 'var(--mint, #f0f9f4)' },
+  { title: 'Opal Collection', subtitle: 'Mexican fire opals, black opals, and white opals — each with their own stunning play of color.', items: opals, bg: 'var(--mint, #f0f9f4)' },
   { title: 'Gemstones', subtitle: 'Labradorite, sunstone, fluorite, and more.', items: gemstones, bg: null },
 ]
 
@@ -111,7 +114,7 @@ export default function Gallery() {
       {filtered.length === 0 ? (
         <section className="section">
           <div className="container" style={{ textAlign: 'center', color: 'var(--text-light)' }}>
-            <p>No items found for "<strong>{query}</strong>"</p>
+            <p>No items found for <strong>{query}</strong></p>
           </div>
         </section>
       ) : (

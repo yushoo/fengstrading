@@ -14,12 +14,12 @@ export default function Home() {
               <span>✨</span> Importer &amp; Wholesaler · Open to Public
             </div>
             <h1>
-              Houston's Home for<br />
+              Houston&apos;s Home for<br />
               <em>Beads, Gems</em> &amp;<br />
               <span className="hero-red">Fine Minerals</span>
             </h1>
             <p className="hero-sub">
-              Feng's Trading has served Houston's bead and gem community for
+              Feng&apos;s Trading has served Houston&apos;s bead and gem community for
               over 20 years — with thousands of gemstones, pearls, findings,
               and crystals all under one roof.
             </p>
@@ -50,9 +50,9 @@ export default function Home() {
       <section className="features-section">
         <div className="container">
           <div className="section-header">
-            <h2>Why Choose Feng's Trading?</h2>
+            <h2>Why Choose Feng&apos;s Trading?</h2>
             <div className="divider" />
-            <p>Over two decades of quality and trust in Houston's bead community.</p>
+            <p>Over two decades of quality and trust in Houston&apos;s bead community.</p>
           </div>
           <div className="features-grid">
             <div className="feature-card">
@@ -134,7 +134,7 @@ export default function Home() {
               <span className="pill-divider-line" />
             </div>
             <p>
-              Feng's Trading has been serving bead enthusiasts, jewelry makers, and
+              Feng&apos;s Trading has been serving bead enthusiasts, jewelry makers, and
               professional shop owners in Houston, Texas for over 20 years. We believe
               in providing only the finest quality gemstones and beads, backed by
               friendly, knowledgeable service.
@@ -173,11 +173,11 @@ export default function Home() {
             </div>
             <p>
               What started as a passion for beautiful gemstones and crystals has 
-              grown into a thriving family business. At Feng's Trading, we're proud 
+              grown into a thriving family business. At Feng&apos;s Trading, we&apos;re proud
               to share our love for quality beads and minerals with the Houston community.
             </p>
             <p style={{ marginTop: '1rem' }}>
-              Our family's dedication to excellence has made us a trusted destination 
+              Our family&apos;s dedication to excellence has made us a trusted destination 
               for bead enthusiasts and jewelry makers for over two decades.
             </p>
           </div>
@@ -218,9 +218,9 @@ export default function Home() {
               <span className="pill-divider-line" />
             </div>
             <p>
-              Drop by our Houston store — we'd love to see you in person.
+              Drop by our Houston store — we&apos;d love to see you in person.
               Browse thousands of beads, gems, and minerals, and let our team
-              help you find exactly what you're looking for.
+              help you find exactly what you&apos;re looking for.
             </p>
             <div className="visit-details">
               <div className="visit-detail-row">
