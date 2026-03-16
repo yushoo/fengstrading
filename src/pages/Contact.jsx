@@ -23,7 +23,7 @@ export default function Contact() {
         <div className="container">
           <h1>Contact Us</h1>
           <div className="divider" style={{ margin: '0.75rem auto 1rem' }} />
-          <p>We'd love to hear from you.</p>
+          <p>We&apos;d love to hear from you.</p>
         </div>
       </section>
 
@@ -70,7 +70,7 @@ export default function Contact() {
 
             {sent ? (
               <div className="success-msg">
-                <p>✅ Thank you! We'll get back to you soon.</p>
+                <p>✅ Thank you! We&apos;ll get back to you soon.</p>
               </div>
             ) : (
               <form className="contact-form" onSubmit={handleSubmit}>

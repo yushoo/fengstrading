@@ -114,7 +114,7 @@ export default function Gallery() {
       {filtered.length === 0 ? (
         <section className="section">
           <div className="container" style={{ textAlign: 'center', color: 'var(--text-light)' }}>
-            <p>No items found for "<strong>{query}</strong>"</p>
+            <p>No items found for <strong>{query}</strong></p>
           </div>
         </section>
       ) : (
