@@ -9,7 +9,7 @@ const agates = [
 const opals = [
   { id: 1, label: 'Raw Mexican Fire Opal', category: 'Mexican Fire Opal', image: '/gemstones/raw_mexican_fire_opal.jpg' },
   { id: 2, label: 'Mexican Fire Opal Cabochon', category: 'Mexican Fire Opal', image: '/gemstones/mexican_fire_opal_cabochon.jpg' },
-  { id: 3, label: 'AA Black Opal Bead Necklace', category: 'Black Opal', image: '/opals/IMG_4923.jpeg' },
+  { id: 3, label: 'AA Black Opal Strand', category: 'Black Opal', image: '/opals/IMG_4923.jpeg' },
   { id: 4, label: 'AAT Black Opal Strands', category: 'Black Opal', image: '/opals/IMG_4921.jpeg' },
   { id: 5, label: 'White Opal Strands', category: 'White Opal', image: '/opals/IMG_4922.jpeg' },
 ]
