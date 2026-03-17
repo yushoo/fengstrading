@@ -4,6 +4,31 @@ import './Gallery.css'
 const agates = [
   { id: 1, label: 'Alexa Agate', category: 'Agate', image: '/gemstones/alexa_agate.jpg' },
   { id: 2, label: 'Alexa Agate Bead', category: 'Agate', image: '/gemstones/alexa_agate_bead.jpg' },
+  { id: 3, label: 'Sardonyx Round Strand', category: 'Sardonyx', image: '/sardonyx/IMG_4934.jpeg', shape: 'round', color: 'red-orange', size: '8mm' },
+  { id: 4, label: 'Sardonyx Round Strand', category: 'Sardonyx', image: '/sardonyx/IMG_4935.jpeg', shape: 'round', color: 'dark brown-orange', size: '10mm' },
+  { id: 5, label: 'Sardonyx Tube Strand', category: 'Sardonyx', image: '/sardonyx/IMG_4936.jpeg', shape: 'tube', color: 'red-orange', size: '8-10mm' },
+  { id: 6, label: 'Sardonyx Rondelle Strand', category: 'Sardonyx', image: '/sardonyx/IMG_4937.jpeg', shape: 'rondelle', color: 'red-brown', size: '6-8mm' },
+  { id: 7, label: 'Sardonyx Oval Strand', category: 'Sardonyx', image: '/sardonyx/IMG_4938.jpeg', shape: 'oval', color: 'black-red-orange', size: '6-8mm' },
+  { id: 8, label: 'Sardonyx Oval Strand', category: 'Sardonyx', image: '/sardonyx/IMG_4939.jpeg', shape: 'oval', color: 'red-orange', size: '5-6mm' },
+  { id: 9, label: 'Sardonyx Round Strand', category: 'Sardonyx', image: '/sardonyx/IMG_4941.jpeg', shape: 'round', color: 'red-orange', size: '4-6mm' },
+]
+
+const amazonite = [
+  { id: 1, label: 'Amazonite Barrel Strand', category: 'Amazonite', image: '/amazonite/IMG_4943.jpeg', shape: 'barrel', color: 'light teal', size: '12-15mm' },
+  { id: 2, label: 'Amazonite Chip Strand', category: 'Amazonite', image: '/amazonite/IMG_4944.jpeg', shape: 'chip', color: 'teal', size: '5-8mm' },
+  { id: 3, label: 'Amazonite Nugget Strand', category: 'Amazonite', image: '/amazonite/IMG_4945.jpeg', shape: 'nugget', color: 'teal', size: '8-10mm' },
+  { id: 4, label: 'Amazonite Oval Strand', category: 'Amazonite', image: '/amazonite/IMG_4946.jpeg', shape: 'oval', color: 'light teal', size: '10-12mm' },
+  { id: 5, label: 'Amazonite Rondelle Strand', category: 'Amazonite', image: '/amazonite/IMG_4947.jpeg', shape: 'rondelle', color: 'multicolor', size: '5-6mm' },
+  { id: 6, label: 'Amazonite Round Strand', category: 'Amazonite', image: '/amazonite/IMG_4948.jpeg', shape: 'round', color: 'teal', size: '8mm' },
+]
+
+const coral = [
+  { id: 1, label: 'Coral Cube Strand', category: 'Coral', image: '/coral/IMG_4949.jpeg', shape: 'cube', color: 'red', size: '5mm' },
+  { id: 2, label: 'Coral Nugget Strand', category: 'Coral', image: '/coral/IMG_4950.jpeg', shape: 'nugget', color: 'orange-red', size: '10-12mm' },
+  { id: 3, label: 'Coral Tube Strand', category: 'Coral', image: '/coral/IMG_4951.jpeg', shape: 'tube', color: 'orange', size: '12-15mm' },
+  { id: 4, label: 'Coral Tube Strand', category: 'Coral', image: '/coral/IMG_4952.jpeg', shape: 'tube', color: 'red', size: '8-10mm' },
+  { id: 5, label: 'Coral Rondelle Strand', category: 'Coral', image: '/coral/IMG_4953.jpeg', shape: 'rondelle', color: 'white', size: '6-8mm' },
+  { id: 6, label: 'Coral Tube Strand', category: 'Coral', image: '/coral/IMG_4954.jpeg', shape: 'tube', color: 'white', size: '8-10mm' },
 ]
 
 const opals = [
@@ -69,7 +94,9 @@ const allSections = [
   { title: 'Jade Bangles', subtitle: 'Traditional jade bangles in a variety of styles.', items: bangles, bg: 'var(--mint, #f0f9f4)' },
   { title: 'Pearls', subtitle: 'Beautiful natural pearl pieces.', items: pearls, bg: null },
   { title: 'Turquoise', subtitle: 'Natural turquoise pieces.', items: turquoise, bg: 'var(--mint, #f0f9f4)' },
-  { title: 'Agate', subtitle: 'Natural agate stones and beads.', items: agates, bg: null },
+  { title: 'Agate & Sardonyx', subtitle: 'Natural agate and sardonyx stones and beads.', items: agates, bg: null },
+  { title: 'Amazonite', subtitle: 'Natural amazonite strands in a variety of shapes and sizes.', items: amazonite, bg: 'var(--mint, #f0f9f4)' },
+  { title: 'Coral', subtitle: 'Natural coral strands in white, red, and orange.', items: coral, bg: null },
   { title: 'Opal Collection', subtitle: 'Mexican fire opals, black opals, and white opals — each with their own stunning play of color.', items: opals, bg: 'var(--mint, #f0f9f4)' },
   { title: 'Gemstones', subtitle: 'Labradorite, sunstone, fluorite, and more.', items: gemstones, bg: null },
 ]
@@ -78,7 +105,11 @@ function filter(items, query) {
   if (!query) return items
   const q = query.toLowerCase()
   return items.filter(item =>
-    item.label.toLowerCase().includes(q) || item.category.toLowerCase().includes(q)
+    item.label.toLowerCase().includes(q) ||
+    item.category.toLowerCase().includes(q) ||
+    (item.shape && item.shape.toLowerCase().includes(q)) ||
+    (item.color && item.color.toLowerCase().includes(q)) ||
+    (item.size && item.size.toLowerCase().includes(q))
   )
 }
 
