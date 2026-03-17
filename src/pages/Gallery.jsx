@@ -113,7 +113,7 @@ function filter(items, query) {
   )
 }
 
-export default function Gallery() {
+export default function Gallery({ headerHeight = 80 }) {
   const [query, setQuery] = useState('')
 
   const filtered = allSections
@@ -127,6 +127,11 @@ export default function Gallery() {
           <h1>Our Collection</h1>
           <div className="divider" style={{ margin: '0.75rem auto 1rem' }} />
           <p>Handcrafted bracelets, jade charms, bangles, pearls, and more. More images coming soon!</p>
+        </div>
+      </section>
+
+      <div className="gallery-search-bar" style={{ top: `${headerHeight}px` }}>
+        <div className="container">
           <div className="gallery-search">
             <input
               type="text"
@@ -140,7 +145,7 @@ export default function Gallery() {
             )}
           </div>
         </div>
-      </section>
+      </div>
 
       {filtered.length === 0 ? (
         <section className="section">
