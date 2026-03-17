@@ -40,32 +40,32 @@ const opals = [
 ]
 
 const bracelets = [
-  { id: 1, label: '7 Chakra Bracelet', category: 'Healing', image: '/bracelets/7chakra_bracelet.jpg' },
-  { id: 2, label: 'Amazonite Bracelet', category: 'Calming', image: '/bracelets/amazonite_bracelet.jpg' },
-  { id: 3, label: 'Black Tourmaline Bracelet', category: 'Protection', image: '/bracelets/black_tourmaline_bracelet.jpg' },
-  { id: 4, label: 'Blue Tourmaline Bracelet', category: 'Communication', image: '/bracelets/blue_tourmaline_bracelet.jpg' },
-  { id: 5, label: 'Jade Bracelet', category: 'Balance', image: '/bracelets/jade_bracelet.jpg' },
-  { id: 7, label: 'Pink Quartz Bracelet', category: 'Love', image: '/bracelets/pink_quartz_bracelet.jpg' },
-  { id: 8, label: 'Agate Bracelet', category: 'Grounding', image: '/bracelets/agate_bracelet.jpg' },
-  { id: 9, label: 'Aventurine Bracelet', category: 'Prosperity', image: '/bracelets/aventurine_bracelet.jpg' },
+  { id: 1, label: '7 Chakra Bracelet', category: 'Healing', image: '/bracelets/7chakra_bracelet.jpg', shape: 'round', color: 'multicolor', size: '8mm' },
+  { id: 2, label: 'Amazonite Bracelet', category: 'Calming', image: '/bracelets/amazonite_bracelet.jpg', shape: 'round', color: 'light blue-white', size: '8mm' },
+  { id: 3, label: 'Black Tourmaline Bracelet', category: 'Protection', image: '/bracelets/black_tourmaline_bracelet.jpg', shape: 'round', color: 'black-white-gray', size: '8mm' },
+  { id: 4, label: 'Blue Tourmaline Bracelet', category: 'Communication', image: '/bracelets/blue_tourmaline_bracelet.jpg', shape: 'round', color: 'dark golden-brown', size: '8mm' },
+  { id: 5, label: 'Jade Bracelet', category: 'Balance', image: '/bracelets/jade_bracelet.jpg', shape: 'round', color: 'dark green', size: '10mm' },
+  { id: 7, label: 'Pink Quartz Bracelet', category: 'Love', image: '/bracelets/pink_quartz_bracelet.jpg', shape: 'round', color: 'light pink', size: '8mm' },
+  { id: 8, label: 'Agate Bracelet', category: 'Grounding', image: '/bracelets/agate_bracelet.jpg', shape: 'round', color: 'white-gray-peach', size: '8mm' },
+  { id: 9, label: 'Aventurine Bracelet', category: 'Prosperity', image: '/bracelets/aventurine_bracelet.jpg', shape: 'round', color: 'light green', size: '10mm' },
 ]
 
 const charms = [
-  { id: 1, label: 'Jade Mouse Charm', category: 'Jade', image: '/charms/jade_animal_charms_9pcs.jpg' },
-  { id: 2, label: 'Jade Pig Charms', category: 'Jade', image: '/charms/jade_animal_charms_group.jpg' },
-  { id: 3, label: 'Jade Chicken Charm', category: 'Jade', image: '/charms/jade_squirrel_pendant.jpg' },
-  { id: 4, label: 'Jade Rabbit Charms', category: 'Jade', image: '/charms/jade_rabbit_pendants.jpg' },
-  { id: 5, label: 'Jade Fish Charm', category: 'Jade', image: '/charms/jade_fish_charm.jpg' },
-  { id: 6, label: 'Jade Assorted Charms', category: 'Jade', image: '/charms/jade_assorted_charms.jpg' },
+  { id: 1, label: 'Jade Mouse Charm', category: 'Jade', image: '/charms/jade_animal_charms_9pcs.jpg', shape: 'carved animal', color: 'white-celadon', size: '15-20mm' },
+  { id: 2, label: 'Jade Pig Charms', category: 'Jade', image: '/charms/jade_animal_charms_group.jpg', shape: 'carved animal', color: 'celadon green', size: '10-12mm' },
+  { id: 3, label: 'Jade Chicken Charm', category: 'Jade', image: '/charms/jade_squirrel_pendant.jpg', shape: 'carved animal', color: 'white', size: '15mm' },
+  { id: 4, label: 'Jade Rabbit Charms', category: 'Jade', image: '/charms/jade_rabbit_pendants.jpg', shape: 'carved animal', color: 'white', size: '10-12mm' },
+  { id: 5, label: 'Jade Fish Charm', category: 'Jade', image: '/charms/jade_fish_charm.jpg', shape: 'carved double fish', color: 'white', size: '20mm' },
+  { id: 6, label: 'Jade Assorted Charms', category: 'Jade', image: '/charms/jade_assorted_charms.jpg', shape: 'carved animal', color: 'celadon-white', size: '10-15mm' },
 ]
 
 const pendants = [
-  { id: 1, label: 'Jade Pendant Collection', category: 'Jade', image: '/pendants/jade_pendant_collection.jpg' },
+  { id: 1, label: 'Jade Pendant Collection', category: 'Jade', image: '/pendants/jade_pendant_collection.jpg', shape: 'carved', color: 'celadon-white', size: 'varied' },
 ]
 
 const bangles = [
-  { id: 1, label: 'Jade Bangles', category: 'Jade', image: '/bangles/jade_bangles_1.jpg' },
-  { id: 2, label: 'Jade Bangles', category: 'Jade', image: '/bangles/jade_bangles_2.jpg' },
+  { id: 1, label: 'Jade Bangles', category: 'Jade', image: '/bangles/jade_bangles_1.jpg', shape: 'bangle', color: 'celadon-white-lavender', size: 'standard' },
+  { id: 2, label: 'Jade Bangles', category: 'Jade', image: '/bangles/jade_bangles_2.jpg', shape: 'bangle', color: 'dark green-gray', size: 'standard' },
 ]
 
 const pearls = [
@@ -75,16 +75,16 @@ const pearls = [
 ]
 
 const gemstones = [
-  { id: 1, label: 'Labradorite', category: 'Labradorite', image: '/gemstones/labradorite.jpg' },
-  { id: 2, label: 'Sunstone', category: 'Sunstone', image: '/gemstones/sunstones.jpg' },
-  { id: 3, label: 'Fluorite', category: 'Fluorite', image: '/gemstones/fluorite.jpg' },
-  { id: 4, label: 'Aquamarine', category: 'Aquamarine', image: '/gemstones/aquamarine.jpg' },
-  { id: 5, label: 'Kyanite', category: 'Kyanite', image: '/gemstones/kyanite.jpg' },
+  { id: 1, label: 'Labradorite Round Strand', category: 'Labradorite', image: '/gemstones/labradorite.jpg', shape: 'round', color: 'gray with blue flash', size: '10mm' },
+  { id: 2, label: 'Sunstone Round Strand', category: 'Sunstone', image: '/gemstones/sunstones.jpg', shape: 'round', color: 'orange-brown', size: '10mm' },
+  { id: 3, label: 'Fluorite Heart Strand', category: 'Fluorite', image: '/gemstones/fluorite.jpg', shape: 'heart', color: 'purple-teal multicolor', size: '10-12mm' },
+  { id: 4, label: 'Aquamarine Round Strand', category: 'Aquamarine', image: '/gemstones/aquamarine.jpg', shape: 'round', color: 'blue', size: '10mm' },
+  { id: 5, label: 'Kyanite Round Strand', category: 'Kyanite', image: '/gemstones/kyanite.jpg', shape: 'round', color: 'dark blue', size: '10mm' },
 ]
 
 const turquoise = [
-  { id: 1, label: 'Turquoise', category: 'Turquoise', image: '/turquoise/turquoise_1.jpg' },
-  { id: 2, label: 'Turquoise', category: 'Turquoise', image: '/turquoise/turquoise_2.jpg' },
+  { id: 1, label: 'Turquoise Oval Strand', category: 'Turquoise', image: '/turquoise/turquoise_1.jpg', shape: 'oval', color: 'bright turquoise blue', size: '8-10mm' },
+  { id: 2, label: 'Turquoise Nugget Strand', category: 'Turquoise', image: '/turquoise/turquoise_2.jpg', shape: 'nugget', color: 'turquoise blue with matrix', size: '10-14mm' },
 ]
 
 const allSections = [
