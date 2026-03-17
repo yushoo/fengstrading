@@ -164,7 +164,7 @@ export default function Gallery() {
               <div className="gallery-grid">
                 {section.items.map(item => (
                   <div key={item.id} className="gallery-card">
-                    <img src={item.image} alt={item.label} className="gallery-img" />
+                    <img src={item.image} alt={item.label} className="gallery-img" loading="lazy" />
                     <div className="gallery-card-info">
                       <h4>{item.label}</h4>
                       <span className="gallery-tag">{item.category}</span>
