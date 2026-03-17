@@ -125,21 +125,22 @@ export default function Gallery() {
             style={section.bg ? { background: section.bg, paddingTop: '3rem', paddingBottom: '3rem' } : {}}
           >
             <div className="container">
-              <div className="section-header">
-                <h2>{section.title}</h2>
-                <div className="divider" />
-                {section.subtitle && <p>{section.subtitle}</p>}
-              </div>
-              <div className="gallery-grid">
-                {section.items.map(item => (
-                  <div key={item.id} className="gallery-card">
-                    <img src={item.image} alt={item.label} className="gallery-img" />
-                    <div className="gallery-card-info">
-                      <h4>{item.label}</h4>
-                      <span className="gallery-tag">{item.category}</span>
+              <div className="gallery-section-layout">
+                <div className="gallery-section-label">
+                  <h2>{section.title}</h2>
+                  {section.subtitle && <p>{section.subtitle}</p>}
+                </div>
+                <div className="gallery-grid">
+                  {section.items.map(item => (
+                    <div key={item.id} className="gallery-card">
+                      <img src={item.image} alt={item.label} className="gallery-img" />
+                      <div className="gallery-card-info">
+                        <h4>{item.label}</h4>
+                        <span className="gallery-tag">{item.category}</span>
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
             </div>
           </section>
