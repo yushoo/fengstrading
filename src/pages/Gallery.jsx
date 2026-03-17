@@ -2,8 +2,8 @@ import { useState } from 'react'
 import './Gallery.css'
 
 const agates = [
-  { id: 1, label: 'Alexa Agate', category: 'Agate', image: '/gemstones/alexa_agate.jpg' },
-  { id: 2, label: 'Alexa Agate Bead', category: 'Agate', image: '/gemstones/alexa_agate_bead.jpg' },
+  { id: 1, label: 'Alexa Agate Chevron Strand', category: 'Agate', image: '/gemstones/alexa_agate.jpg', shape: 'chevron', color: 'multicolor pastel', size: 'flat tile' },
+  { id: 2, label: 'Alexa Agate Round Strand', category: 'Agate', image: '/gemstones/alexa_agate_bead.jpg', shape: 'round', color: 'multicolor pastel', size: '8mm' },
   { id: 3, label: 'Sardonyx Round Strand', category: 'Sardonyx', image: '/sardonyx/IMG_4934.jpeg', shape: 'round', color: 'red-orange', size: '8mm' },
   { id: 4, label: 'Sardonyx Round Strand', category: 'Sardonyx', image: '/sardonyx/IMG_4935.jpeg', shape: 'round', color: 'dark brown-orange', size: '10mm' },
   { id: 5, label: 'Sardonyx Tube Strand', category: 'Sardonyx', image: '/sardonyx/IMG_4936.jpeg', shape: 'tube', color: 'red-orange', size: '8-10mm' },
@@ -32,11 +32,11 @@ const coral = [
 ]
 
 const opals = [
-  { id: 1, label: 'Raw Mexican Fire Opal', category: 'Mexican Fire Opal', image: '/gemstones/raw_mexican_fire_opal.jpg' },
-  { id: 2, label: 'Mexican Fire Opal Cabochon', category: 'Mexican Fire Opal', image: '/gemstones/mexican_fire_opal_cabochon.jpg' },
-  { id: 3, label: 'AA Black Opal Bead Necklace', category: 'Black Opal', image: '/opals/IMG_4923.jpeg' },
-  { id: 4, label: 'AAT Black Opal Strands', category: 'Black Opal', image: '/opals/IMG_4921.jpeg' },
-  { id: 5, label: 'White Opal Strands', category: 'White Opal', image: '/opals/IMG_4922.jpeg' },
+  { id: 1, label: 'Raw Mexican Fire Opal', category: 'Mexican Fire Opal', image: '/gemstones/raw_mexican_fire_opal.jpg', shape: 'rough', color: 'orange-red', size: 'varied' },
+  { id: 2, label: 'Mexican Fire Opal Cabochon', category: 'Mexican Fire Opal', image: '/gemstones/mexican_fire_opal_cabochon.jpg', shape: 'cabochon', color: 'orange-red', size: 'varied' },
+  { id: 3, label: 'AA Black Opal Faceted Rondelle Strand', category: 'Black Opal', image: '/opals/IMG_4923.jpeg', shape: 'rondelle', color: 'black', size: '6-8mm' },
+  { id: 4, label: 'AAT Black Opal Rondelle Strands', category: 'Black Opal', image: '/opals/IMG_4921.jpeg', shape: 'rondelle', color: 'dark multicolor', size: '4-6mm' },
+  { id: 5, label: 'White Opal Rondelle Strands', category: 'White Opal', image: '/opals/IMG_4922.jpeg', shape: 'rondelle', color: 'white', size: '3-6mm' },
 ]
 
 const bracelets = [
@@ -69,9 +69,9 @@ const bangles = [
 ]
 
 const pearls = [
-  { id: 1, label: 'Pearl Collection', category: 'Pearl', image: '/pearls/pearls_1.jpg' },
-  { id: 2, label: 'Pearl Collection', category: 'Pearl', image: '/pearls/pearls_2.jpg' },
-  { id: 3, label: 'Fresh Water Pearl', category: 'Pearl', image: '/pearls/fresh_water_pearl.jpg' },
+  { id: 1, label: 'Freshwater Keshi Pearl Strand', category: 'Pearl', image: '/pearls/pearls_1.jpg', shape: 'keshi', color: 'white', size: 'irregular' },
+  { id: 2, label: 'Freshwater Keshi Pearl Strand', category: 'Pearl', image: '/pearls/pearls_2.jpg', shape: 'keshi', color: 'white', size: '2-3mm' },
+  { id: 3, label: 'Freshwater Round Pearl Strand', category: 'Pearl', image: '/pearls/fresh_water_pearl.jpg', shape: 'round', color: 'gold', size: '10-12mm' },
 ]
 
 const gemstones = [
