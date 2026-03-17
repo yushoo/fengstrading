@@ -63,7 +63,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/gallery" element={<Gallery headerHeight={headerHeight} />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/builder" element={<Builder />} />
         </Routes>
