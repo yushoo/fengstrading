@@ -1,5 +1,11 @@
-import { useState } from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
+
+function ScrollToTop() {
+  const { pathname } = useLocation()
+  useEffect(() => { window.scrollTo(0, 0) }, [pathname])
+  return null
+}
 import './App.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
@@ -59,6 +65,7 @@ function App() {
         )}
         <Navbar />
       </div>
+      <ScrollToTop />
       <main className="page" style={{ paddingTop: `${headerHeight}px` }}>
         <Routes>
           <Route path="/" element={<Home />} />
