@@ -42,7 +42,7 @@ const opals = [
 const bracelets = [
   { id: 1, label: '7 Chakra Bracelet', category: 'Healing', image: '/bracelets/7chakra_bracelet.jpg', shape: 'round', color: 'multicolor', size: '8mm' },
   { id: 2, label: 'Amazonite Bracelet', category: 'Calming', image: '/bracelets/amazonite_bracelet.jpg', shape: 'round', color: 'light blue-white', size: '8mm' },
-  { id: 3, label: 'Black Tourmaline Bracelet', category: 'Protection', image: '/bracelets/black_tourmaline_bracelet.jpg', shape: 'round', color: 'black-white-gray', size: '8mm' },
+  { id: 3, label: 'Black Tourmalinated Quartz Bracelet', category: 'Protection', image: '/bracelets/black_tourmaline_bracelet.jpg', shape: 'round', color: 'black-white-gray', size: '8mm' },
   { id: 4, label: 'Blue Tiger Eye Bracelet', category: 'Communication', image: '/bracelets/blue_tourmaline_bracelet.jpg', shape: 'round', color: 'dark golden-brown', size: '8mm' },
   { id: 5, label: 'Jade Bracelet', category: 'Balance', image: '/bracelets/jade_bracelet.jpg', shape: 'round', color: 'dark green', size: '10mm' },
   { id: 7, label: 'Pink Quartz Bracelet', category: 'Love', image: '/bracelets/pink_quartz_bracelet.jpg', shape: 'round', color: 'light pink', size: '8mm' },
