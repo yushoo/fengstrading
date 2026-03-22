@@ -100,7 +100,6 @@ const jadeStrands = [
 ]
 
 const hematite = [
-  { id: 1, label: 'Hematite Collection Display', category: 'Hematite', image: '/hematite/hematite_collection_display.jpeg', shape: 'varied', color: 'black-silver-gold', size: 'varied' },
   { id: 2, label: 'Hematite Round Strand', category: 'Hematite', image: '/hematite/hematite_round_large.jpeg', shape: 'round', color: 'black metallic', size: '10mm' },
   { id: 3, label: 'Hematite Mixed Shapes Strand', category: 'Hematite', image: '/hematite/hematite_mixed_shapes.jpeg', shape: 'mixed', color: 'black metallic', size: '2-4mm' },
   { id: 4, label: 'Hematite Round Strand', category: 'Hematite', image: '/hematite/hematite_round_small.jpeg', shape: 'round', color: 'black metallic', size: '4-6mm' },
