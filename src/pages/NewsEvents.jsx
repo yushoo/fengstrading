@@ -42,7 +42,16 @@ export default function NewsEvents() {
   const shows = data?.shows ?? []
   const updates = (data?.updates ?? []).filter(u => u['Show on Website']?.trim().toLowerCase() === 'yes')
 
-  const activeShows = shows.filter(s => s['Status'] === 'Now' || s['Status'] === 'Upcoming')
+  const activeShows = shows
+    .filter(s => s['Status'] === 'Now' || s['Status'] === 'Upcoming')
+    .sort((a, b) => {
+      const da = new Date(a['Start Date'])
+      const db = new Date(b['Start Date'])
+      if (isNaN(da) && isNaN(db)) return 0
+      if (isNaN(da)) return 1
+      if (isNaN(db)) return -1
+      return da - db
+    })
   const currentShow = shows.find(s => s['Status'] === 'Now')
 
   return (
@@ -52,10 +61,6 @@ export default function NewsEvents() {
       <section className="ne-hero">
         <div className="container">
           <h1>News &amp; Events</h1>
-          <p className="ne-hero-sub">
-            Stay up to date on where we&apos;ll be, what just arrived,<br className="ne-br" />
-            and the latest from Feng&apos;s Trading.
-          </p>
         </div>
       </section>
 
@@ -90,7 +95,7 @@ export default function NewsEvents() {
       <section className="section ne-shows-section">
         <div className="container">
           <div className="section-header">
-            <h2>Shows</h2>
+            <h2>Gem Shows</h2>
             <div className="divider" />
             <p>Our Houston store remains open while we travel to gem and trunk shows across the country</p>
           </div>
