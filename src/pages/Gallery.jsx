@@ -87,6 +87,18 @@ const turquoise = [
   { id: 2, label: 'Turquoise Nugget Strand', category: 'Turquoise', image: '/turquoise/turquoise_2.jpg', shape: 'nugget', color: 'turquoise blue with matrix', size: '10-14mm' },
 ]
 
+const jadeStrands = [
+  { id: 1, label: 'Jade Chips Loose', category: 'Jade', image: '/jade/jade_chips_loose.jpg', shape: 'chip', color: 'green', size: 'varied' },
+  { id: 2, label: 'Jade Collection Display', category: 'Jade', image: '/jade/jade_collection_display.jpg', shape: 'varied', color: 'green', size: 'varied' },
+  { id: 3, label: 'Jade Collection Tray', category: 'Jade', image: '/jade/jade_collection_tray.jpg', shape: 'varied', color: 'green', size: 'varied' },
+]
+
+const hematite = [
+]
+
+const imperialJasper = [
+]
+
 const allSections = [
   { title: 'Crystal Bracelets', subtitle: 'Each bracelet is crafted with authentic natural crystals and stones.', items: bracelets, bg: null },
   { title: 'Jade Charms', subtitle: 'Hand-carved natural jade animal charms.', items: charms, bg: 'var(--mint, #f0f9f4)' },
@@ -99,6 +111,9 @@ const allSections = [
   { title: 'Coral', subtitle: 'Natural coral strands in white, red, and orange.', items: coral, bg: null },
   { title: 'Opal Collection', subtitle: 'Mexican fire opals, black opals, and white opals — each with their own stunning play of color.', items: opals, bg: 'var(--mint, #f0f9f4)' },
   { title: 'Gemstones', subtitle: 'Labradorite, sunstone, fluorite, and more.', items: gemstones, bg: null },
+  { title: 'Jade Strands', subtitle: 'Natural jade strands and Canadian jade in a variety of shapes and sizes.', items: jadeStrands, bg: 'var(--mint, #f0f9f4)' },
+  { title: 'Hematite', subtitle: 'Natural hematite strands.', items: hematite, bg: null },
+  { title: 'Imperial Jasper', subtitle: 'Natural imperial jasper strands.', items: imperialJasper, bg: 'var(--mint, #f0f9f4)' },
 ]
 
 function filter(items, query) {
