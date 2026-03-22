@@ -87,6 +87,34 @@ const turquoise = [
   { id: 2, label: 'Turquoise Nugget Strand', category: 'Turquoise', image: '/turquoise/turquoise_2.jpg', shape: 'nugget', color: 'turquoise blue with matrix', size: '10-14mm' },
 ]
 
+const jadeStrands = [
+  { id: 1, label: 'Jade Chips Loose', category: 'Jade', image: '/jade/jade_chips_loose.jpg', shape: 'chip', color: 'green', size: 'varied' },
+  { id: 2, label: 'Jade Collection Display', category: 'Jade', image: '/jade/jade_collection_display.jpg', shape: 'varied', color: 'green', size: 'varied' },
+  { id: 3, label: 'Jade Collection Tray', category: 'Jade', image: '/jade/jade_collection_tray.jpg', shape: 'varied', color: 'green', size: 'varied' },
+  { id: 4, label: 'Canadian Jade Faceted Rondelle Strand', category: 'Canadian Jade', image: '/jade/canadian_jade_faceted_rondelle.jpeg', shape: 'rondelle', color: 'olive green', size: '5-6mm' },
+  { id: 5, label: 'Canadian Jade Round Strand', category: 'Canadian Jade', image: '/jade/canadian_jade_round.jpeg', shape: 'round', color: 'olive green', size: '3-4mm' },
+  { id: 6, label: 'Canadian Jade Oval Strand', category: 'Canadian Jade', image: '/jade/canadian_jade_oval.jpeg', shape: 'oval', color: 'deep green', size: '18-20mm' },
+  { id: 7, label: 'Canadian Jade Faceted Round Strand', category: 'Canadian Jade', image: '/jade/canadian_jade_faceted_round.jpeg', shape: 'round', color: 'olive green', size: '10mm' },
+  { id: 8, label: 'Canadian Jade Coin Strand', category: 'Canadian Jade', image: '/jade/canadian_jade_coin.jpeg', shape: 'coin', color: 'olive green', size: '14-16mm' },
+  { id: 9, label: 'Canadian Jade Square Strand', category: 'Canadian Jade', image: '/jade/canadian_jade_square.jpeg', shape: 'square', color: 'olive green', size: '15-18mm' },
+]
+
+const hematite = [
+  { id: 2, label: 'Hematite Round Strand', category: 'Hematite', image: '/hematite/hematite_round_large.jpeg', shape: 'round', color: 'black metallic', size: '10mm' },
+  { id: 3, label: 'Hematite Mixed Shapes Strand', category: 'Hematite', image: '/hematite/hematite_mixed_shapes.jpeg', shape: 'mixed', color: 'black metallic', size: '2-4mm' },
+  { id: 4, label: 'Hematite Round Strand', category: 'Hematite', image: '/hematite/hematite_round_small.jpeg', shape: 'round', color: 'black metallic', size: '4-6mm' },
+  { id: 5, label: 'Hematite Silver Mixed Shapes Strand', category: 'Hematite', image: '/hematite/hematite_silver_mixed.jpeg', shape: 'mixed', color: 'silver metallic', size: '4-10mm' },
+  { id: 6, label: 'Hematite Gold Heishi Strand', category: 'Hematite', image: '/hematite/hematite_gold_heishi.jpeg', shape: 'heishi', color: 'gold metallic', size: '2mm' },
+]
+
+const jasper = [
+  { id: 1, label: 'Imperial Jasper Oval Strand', category: 'Imperial Jasper', image: '/jasper/imperial_jasper_oval_large.jpeg', shape: 'oval', color: 'multicolor', size: '10-14mm' },
+  { id: 2, label: 'Imperial Jasper Round Strand', category: 'Imperial Jasper', image: '/jasper/imperial_jasper_round.jpeg', shape: 'round', color: 'multicolor', size: '8-10mm' },
+  { id: 3, label: 'Imperial Jasper Oval Strand', category: 'Imperial Jasper', image: '/jasper/imperial_jasper_oval_small.jpeg', shape: 'oval', color: 'multicolor', size: '8-10mm' },
+  { id: 4, label: 'Imperial Jasper Heishi Strand', category: 'Imperial Jasper', image: '/jasper/imperial_jasper_heishi.jpeg', shape: 'heishi', color: 'multicolor', size: '3-4mm' },
+  { id: 5, label: 'Imperial Jasper Heart Strand', category: 'Imperial Jasper', image: '/jasper/imperial_jasper_heart.jpeg', shape: 'heart', color: 'multicolor', size: '10mm' },
+]
+
 const allSections = [
   { title: 'Crystal Bracelets', subtitle: 'Each bracelet is crafted with authentic natural crystals and stones.', items: bracelets, bg: null },
   { title: 'Jade Charms', subtitle: 'Hand-carved natural jade animal charms.', items: charms, bg: 'var(--mint, #f0f9f4)' },
@@ -99,6 +127,9 @@ const allSections = [
   { title: 'Coral', subtitle: 'Natural coral strands in white, red, and orange.', items: coral, bg: null },
   { title: 'Opal Collection', subtitle: 'Mexican fire opals, black opals, and white opals — each with their own stunning play of color.', items: opals, bg: 'var(--mint, #f0f9f4)' },
   { title: 'Gemstones', subtitle: 'Labradorite, sunstone, fluorite, and more.', items: gemstones, bg: null },
+  { title: 'Jade Strands', subtitle: 'Natural jade strands and Canadian jade in a variety of shapes and sizes.', items: jadeStrands, bg: 'var(--mint, #f0f9f4)' },
+  { title: 'Hematite', subtitle: 'Natural hematite strands in black, silver, and gold.', items: hematite, bg: null },
+  { title: 'Jasper', subtitle: 'Natural jasper strands in a variety of shapes and colors.', items: jasper, bg: 'var(--mint, #f0f9f4)' },
 ]
 
 function filter(items, query) {
