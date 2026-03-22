@@ -88,15 +88,12 @@ const turquoise = [
 ]
 
 const jadeStrands = [
-  { id: 1, label: 'Jade Chips Loose', category: 'Jade', image: '/jade/jade_chips_loose.jpg', shape: 'chip', color: 'green', size: 'varied' },
-  { id: 2, label: 'Jade Collection Display', category: 'Jade', image: '/jade/jade_collection_display.jpg', shape: 'varied', color: 'green', size: 'varied' },
-  { id: 3, label: 'Jade Collection Tray', category: 'Jade', image: '/jade/jade_collection_tray.jpg', shape: 'varied', color: 'green', size: 'varied' },
-  { id: 4, label: 'Canadian Jade Faceted Rondelle Strand', category: 'Canadian Jade', image: '/jade/canadian_jade_faceted_rondelle.jpeg', shape: 'rondelle', color: 'olive green', size: '5-6mm' },
-  { id: 5, label: 'Canadian Jade Round Strand', category: 'Canadian Jade', image: '/jade/canadian_jade_round.jpeg', shape: 'round', color: 'olive green', size: '3-4mm' },
-  { id: 6, label: 'Canadian Jade Oval Strand', category: 'Canadian Jade', image: '/jade/canadian_jade_oval.jpeg', shape: 'oval', color: 'deep green', size: '18-20mm' },
-  { id: 7, label: 'Canadian Jade Faceted Round Strand', category: 'Canadian Jade', image: '/jade/canadian_jade_faceted_round.jpeg', shape: 'round', color: 'olive green', size: '10mm' },
-  { id: 8, label: 'Canadian Jade Coin Strand', category: 'Canadian Jade', image: '/jade/canadian_jade_coin.jpeg', shape: 'coin', color: 'olive green', size: '14-16mm' },
-  { id: 9, label: 'Canadian Jade Square Strand', category: 'Canadian Jade', image: '/jade/canadian_jade_square.jpeg', shape: 'square', color: 'olive green', size: '15-18mm' },
+  { id: 1, label: 'Canadian Jade Faceted Rondelle Strand', category: 'Canadian Jade', image: '/jade/canadian_jade_faceted_rondelle.jpeg', shape: 'rondelle', color: 'olive green', size: '5-6mm' },
+  { id: 2, label: 'Canadian Jade Round Strand', category: 'Canadian Jade', image: '/jade/canadian_jade_round.jpeg', shape: 'round', color: 'olive green', size: '3-4mm' },
+  { id: 3, label: 'Canadian Jade Oval Strand', category: 'Canadian Jade', image: '/jade/canadian_jade_oval.jpeg', shape: 'oval', color: 'deep green', size: '18-20mm' },
+  { id: 4, label: 'Canadian Jade Faceted Round Strand', category: 'Canadian Jade', image: '/jade/canadian_jade_faceted_round.jpeg', shape: 'round', color: 'olive green', size: '10mm' },
+  { id: 5, label: 'Canadian Jade Coin Strand', category: 'Canadian Jade', image: '/jade/canadian_jade_coin.jpeg', shape: 'coin', color: 'olive green', size: '14-16mm' },
+  { id: 6, label: 'Canadian Jade Square Strand', category: 'Canadian Jade', image: '/jade/canadian_jade_square.jpeg', shape: 'square', color: 'olive green', size: '15-18mm' },
 ]
 
 const hematite = [
