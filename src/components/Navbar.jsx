@@ -32,6 +32,7 @@ export default function Navbar() {
           <li><NavLink to="/" end onClick={() => setMenuOpen(false)}>Home</NavLink></li>
           <li><NavLink to="/about" onClick={() => setMenuOpen(false)}>About</NavLink></li>
           <li><NavLink to="/gallery" onClick={() => setMenuOpen(false)}>Gallery</NavLink></li>
+          <li><NavLink to="/news" onClick={() => setMenuOpen(false)}>News &amp; Events</NavLink></li>
           <li><NavLink to="/builder" onClick={() => setMenuOpen(false)}>Webmaster</NavLink></li>
           <li>
             <NavLink to="/contact" className="nav-cta" onClick={() => setMenuOpen(false)}>
