@@ -113,7 +113,7 @@ const allSections = [
   { title: 'Gemstones', subtitle: 'Labradorite, sunstone, fluorite, and more.', items: gemstones, bg: null },
   { title: 'Jade Strands', subtitle: 'Natural jade strands and Canadian jade in a variety of shapes and sizes.', items: jadeStrands, bg: 'var(--mint, #f0f9f4)' },
   { title: 'Hematite', subtitle: 'Natural hematite strands.', items: hematite, bg: null },
-  { title: 'Imperial Jasper', subtitle: 'Natural imperial jasper strands.', items: imperialJasper, bg: 'var(--mint, #f0f9f4)' },
+  { title: 'Jasper', subtitle: 'Natural jasper strands.', items: imperialJasper, bg: 'var(--mint, #f0f9f4)' },
 ]
 
 function filter(items, query) {
