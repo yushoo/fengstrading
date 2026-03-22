@@ -58,11 +58,6 @@ export default function NewsEvents() {
     <div className="news-events-page">
 
       {/* ── Hero ─────────────────────────────────────────────────────────────── */}
-      <section className="ne-hero">
-        <div className="container">
-          <h1>News &amp; Events</h1>
-        </div>
-      </section>
 
       {/* ── Currently At banner ──────────────────────────────────────────────── */}
       {!loading && currentShow && (
