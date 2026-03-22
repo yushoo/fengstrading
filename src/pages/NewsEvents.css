@@ -352,14 +352,9 @@
   position: relative;
 }
 
-.ne-timeline-item:not(:last-child)::before {
-  content: '';
-  position: absolute;
-  left: 20px;
-  top: 48px;
-  bottom: 0;
-  width: 2px;
-  background: var(--peach);
+.ne-timeline-item:not(:last-child) {
+  border-bottom: 1px solid var(--peach);
+  margin-bottom: 1.5rem;
 }
 
 .ne-timeline-icon {

@@ -78,7 +78,7 @@ async function fetchTab(tabName) {
 
 export const SAMPLE_SHOWS = [
   {
-    'Show Name': 'Denver Gem & Mineral Show',
+    'Event': 'Denver Gem & Mineral Show',
     'City': 'Denver, CO',
     'Venue': 'Denver Mart',
     'Booth': 'B-24',
@@ -88,7 +88,7 @@ export const SAMPLE_SHOWS = [
     'Notes': 'Largest show of the spring season!',
   },
   {
-    'Show Name': 'Tucson Gem & Mineral Showcase',
+    'Event': 'Tucson Gem & Mineral Showcase',
     'City': 'Tucson, AZ',
     'Venue': 'Tucson Convention Center',
     'Booth': 'Hall D — Table 12',
@@ -98,7 +98,7 @@ export const SAMPLE_SHOWS = [
     'Notes': 'Huge turquoise selection this year',
   },
   {
-    'Show Name': 'Dallas Bead & Gem Expo',
+    'Event': 'Dallas Bead & Gem Expo',
     'City': 'Dallas, TX',
     'Venue': 'Market Center',
     'Booth': 'Row 7, Table 3',
@@ -108,7 +108,7 @@ export const SAMPLE_SHOWS = [
     'Notes': '',
   },
   {
-    'Show Name': 'Atlanta Rock & Gem Festival',
+    'Event': 'Atlanta Rock & Gem Festival',
     'City': 'Atlanta, GA',
     'Venue': 'Infinite Energy Center',
     'Booth': 'Booth 118',
@@ -119,40 +119,6 @@ export const SAMPLE_SHOWS = [
   },
 ]
 
-export const SAMPLE_ARRIVALS = [
-  {
-    'Item Name': 'Amethyst Geode Clusters',
-    'Description': 'Deep purple cathedral geodes from Uruguay, stunning centerpieces',
-    'Category': 'Minerals',
-    'Quantity': '18 pieces',
-    'Date Arrived': 'Mar 10, 2026',
-    'Badge': 'New',
-  },
-  {
-    'Item Name': 'Freshwater Pearl Strands',
-    'Description': 'AA-grade baroque and round pearls, 16" strands in white & lavender',
-    'Category': 'Pearls',
-    'Quantity': '45 strands',
-    'Date Arrived': 'Mar 8, 2026',
-    'Badge': 'Popular',
-  },
-  {
-    'Item Name': 'Labradorite Cabochons',
-    'Description': 'Blue-green flash labradorite, hand-shaped, perfect for pendants',
-    'Category': 'Gemstones',
-    'Quantity': '60 pieces',
-    'Date Arrived': 'Mar 5, 2026',
-    'Badge': 'New',
-  },
-  {
-    'Item Name': 'Trilobite Fossils',
-    'Description': 'Authentic Moroccan trilobites, museum-quality specimens',
-    'Category': 'Fossils',
-    'Quantity': '12 pieces',
-    'Date Arrived': 'Feb 28, 2026',
-    'Badge': 'Popular',
-  },
-]
 
 export const SAMPLE_UPDATES = [
   {
@@ -185,18 +151,17 @@ export const SAMPLE_UPDATES = [
 
 export async function fetchAllSheetData() {
   if (!SHEET_ID) {
-    return { shows: SAMPLE_SHOWS, arrivals: SAMPLE_ARRIVALS, updates: SAMPLE_UPDATES, source: 'sample' }
+    return { shows: SAMPLE_SHOWS, updates: SAMPLE_UPDATES, source: 'sample' }
   }
 
   try {
-    const [shows, arrivals, updates] = await Promise.all([
+    const [shows, updates] = await Promise.all([
       fetchTab('Shows'),
-      fetchTab('Arrivals'),
       fetchTab('Updates'),
     ])
-    return { shows, arrivals, updates, source: 'sheets' }
+    return { shows, updates, source: 'sheets' }
   } catch (err) {
     console.warn('Google Sheets fetch failed, using sample data:', err.message)
-    return { shows: SAMPLE_SHOWS, arrivals: SAMPLE_ARRIVALS, updates: SAMPLE_UPDATES, source: 'sample' }
+    return { shows: SAMPLE_SHOWS, updates: SAMPLE_UPDATES, source: 'sample' }
   }
 }
