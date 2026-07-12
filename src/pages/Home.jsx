@@ -20,7 +20,7 @@ export default function Home() {
             </h1>
             <p className="hero-sub">
               Feng&apos;s Trading has served Houston&apos;s bead and gem community for
-              over 20 years — with thousands of gemstones, pearls, findings,
+              26 years — with thousands of gemstones, pearls, findings,
               and crystals all under one roof.
             </p>
             <div className="hero-btns">
@@ -52,7 +52,7 @@ export default function Home() {
           <div className="section-header">
             <h2>Why Choose Feng&apos;s Trading?</h2>
             <div className="divider" />
-            <p>Over two decades of quality and trust in Houston&apos;s bead community.</p>
+            <p>26 years of quality and trust in Houston&apos;s bead community.</p>
           </div>
           <div className="features-grid">
             <div className="feature-card">
@@ -135,7 +135,7 @@ export default function Home() {
             </div>
             <p>
               Feng&apos;s Trading has been serving bead enthusiasts, jewelry makers, and
-              professional shop owners in Houston, Texas for over 20 years. We believe
+              professional shop owners in Houston, Texas for 26 years. We believe
               in providing only the finest quality gemstones and beads, backed by
               friendly, knowledgeable service.
             </p>
@@ -178,7 +178,7 @@ export default function Home() {
             </p>
             <p style={{ marginTop: '1rem' }}>
               Our family&apos;s dedication to excellence has made us a trusted destination 
-              for bead enthusiasts and jewelry makers for over two decades.
+              for bead enthusiasts and jewelry makers for 26 years.
             </p>
           </div>
           <div className="family-photo">

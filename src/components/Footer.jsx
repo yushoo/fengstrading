@@ -24,7 +24,7 @@ export default function Footer() {
         <div className="footer-brand">
           <h3>Feng&apos;s Trading</h3>
           <p>Better Service • Better Quality</p>
-          <p className="footer-tagline">Houston&apos;s trusted importer &amp; wholesaler of beads, gemstones, and pearls for over 20 years.</p>
+          <p className="footer-tagline">Houston&apos;s trusted importer &amp; wholesaler of beads, gemstones, and pearls for 26 years.</p>
           <div className="footer-social">
             <a href="https://www.tiktok.com/@fengs.trading" target="_blank" rel="noreferrer" aria-label="TikTok">
               <TikTokIcon />

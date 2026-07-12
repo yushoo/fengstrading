@@ -9,7 +9,7 @@ export default function About() {
         <div className="container">
           <h1>About Us</h1>
           <div className="divider" style={{ margin: '0.75rem auto 1rem' }} />
-          <p>Over 20 years of quality, trust, and community.</p>
+          <p>26 years of quality, trust, and community.</p>
         </div>
       </section>
 
@@ -26,7 +26,7 @@ export default function About() {
               of Houston&apos;s most trusted bead shops.
             </p>
             <p>
-              Over more than two decades, we have built lasting relationships with
+              Over 26 years, we have built lasting relationships with
               suppliers around the world, allowing us to offer an extraordinary range
               of gemstones, freshwater pearls, seed beads, and more — all carefully
               inspected before they reach your hands.
@@ -49,7 +49,7 @@ export default function About() {
         {/* Stats strip */}
         <div className="container about-stats">
           <div className="stat-card">
-            <h3>20+</h3>
+            <h3>26</h3>
             <p>Years in Business</p>
           </div>
           <div className="stat-card">
@@ -98,7 +98,7 @@ export default function About() {
           <div className="section-header">
             <h2>What We Stand For</h2>
             <div className="divider" />
-            <p>The values that have guided us for over 20 years.</p>
+            <p>The values that have guided us for 26 years.</p>
           </div>
           <div className="values-grid">
             <div className="value-card">
