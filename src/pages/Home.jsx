@@ -225,15 +225,15 @@ export default function Home() {
             <div className="visit-details">
               <div className="visit-detail-row">
                 <div className="visit-detail-icon">📍</div>
-                <span>9889 Bellaire Blvd Suite 108, Houston, TX 77036</span>
+                <span>6610 Harwin Dr. #118, Houston, TX 77036</span>
               </div>
               <div className="visit-detail-row">
                 <div className="visit-detail-icon">🕐</div>
-                <span>Mon–Sat: 10 AM – 6 PM · Sun: 12 PM – 5 PM</span>
+                <span>Mon–Fri: 10 AM – 5 PM · Sat: 11 AM – 5 PM · Sun: Closed</span>
               </div>
               <div className="visit-detail-row">
                 <div className="visit-detail-icon">📞</div>
-                <span>(713) 272-8886</span>
+                <span>(713) 339-9632</span>
               </div>
             </div>
             <Link to="/contact" className="btn btn-primary">Get Directions</Link>

@@ -47,7 +47,7 @@ export default function Footer() {
 
         <div className="footer-contact">
           <h4>Get in Touch</h4>
-          <p>📍 Houston, TX</p>
+          <p>📍 6610 Harwin Dr. #118, Houston, TX 77036</p>
           <p>📞 <a href="tel:7133399632">(713) 339-9632</a></p>
           <p>✉️ <a href="mailto:info@b2bead.com">info@b2bead.com</a></p>
           <p>🌐 <a href="https://www.b2bead.com" target="_blank" rel="noreferrer">www.b2bead.com</a></p>

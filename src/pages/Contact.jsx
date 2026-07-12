@@ -37,7 +37,7 @@ export default function Contact() {
 
             <div className="info-block">
               <h4>📍 Address</h4>
-              <p>Houston, TX</p>
+              <p>6610 Harwin Dr. #118, Houston, TX 77036</p>
             </div>
 
             <div className="info-block">
@@ -57,8 +57,8 @@ export default function Contact() {
 
             <div className="info-block">
               <h4>🕐 Hours</h4>
-              <p>Mon – Fri: 9am – 6pm</p>
-              <p>Sat: 10am – 5pm</p>
+              <p>Mon – Fri: 10am – 5pm</p>
+              <p>Sat: 11am – 5pm</p>
               <p>Sun: Closed</p>
             </div>
           </div>
