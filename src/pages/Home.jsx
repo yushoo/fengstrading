@@ -39,6 +39,36 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── New Arrivals ── */}
+      <section className="new-arrivals-section">
+        <div className="container">
+          <div className="new-arrivals-top">
+            <span className="new-arrivals-flag">Just In</span>
+            <span className="new-arrivals-note">🚚 This week&apos;s shipment has arrived</span>
+          </div>
+          <div className="new-arrivals-header">
+            <h2>Just Landed in the Shop</h2>
+            <Link to="/gallery" className="new-arrivals-link">Shop New Arrivals →</Link>
+          </div>
+          <div className="new-arrivals-grid">
+            <div className="new-arrivals-card">
+              <img src="/dad-new-shipment.jpg" alt="Feng's Trading owner with this week's shipment" />
+              <div className="new-arrivals-label">Fresh Off the Truck</div>
+            </div>
+            <div className="new-arrivals-card">
+              <img src="/gemstones/amethyst/IMG_2720.jpeg" alt="Amethyst Faceted Nugget Strand" />
+              <span className="new-arrivals-badge">New</span>
+              <div className="new-arrivals-label">Amethyst</div>
+            </div>
+            <div className="new-arrivals-card">
+              <img src="/gemstones/black-onyx/IMG_2734.jpeg" alt="Black Onyx Clover Strand" />
+              <span className="new-arrivals-badge">New</span>
+              <div className="new-arrivals-label">Black Onyx</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Wave: hero → features */}
       <div className="wave-divider" style={{ background: 'var(--mint)' }}>
         <svg viewBox="0 0 1200 50" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" style={{ height: '50px', width: '100%', display: 'block' }}>

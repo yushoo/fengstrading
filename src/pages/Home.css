@@ -147,6 +147,107 @@
   height: 460px;
 }
 
+/* ── New Arrivals ─────────────────────── */
+.new-arrivals-section {
+  background: linear-gradient(135deg, var(--mint) 0%, var(--sand-light) 100%);
+  padding: 3rem 0;
+  border-top: 1px solid var(--mint);
+  border-bottom: 1px solid var(--peach);
+}
+
+.new-arrivals-top {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.new-arrivals-flag {
+  background: var(--red);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 0.3rem 0.9rem;
+  border-radius: 50px;
+}
+
+.new-arrivals-note {
+  color: var(--jade-dark);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.new-arrivals-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.new-arrivals-header h2 {
+  font-size: 1.5rem;
+}
+
+.new-arrivals-link {
+  color: var(--jade-dark);
+  font-weight: 800;
+  font-size: 0.85rem;
+  text-decoration: underline;
+  white-space: nowrap;
+}
+
+.new-arrivals-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.new-arrivals-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(58, 32, 16, 0.12);
+}
+
+.new-arrivals-card img {
+  width: 100%;
+  aspect-ratio: 1.15;
+  object-fit: cover;
+  display: block;
+}
+
+.new-arrivals-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: var(--red);
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 800;
+  padding: 0.2rem 0.6rem;
+  border-radius: 50px;
+}
+
+.new-arrivals-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--text-dark);
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .new-arrivals-grid { grid-template-columns: 1fr; }
+  .new-arrivals-header { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+}
+
 /* ── Features ─────────────────────────── */
 .features-section {
   background-color: var(--mint);

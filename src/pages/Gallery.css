@@ -128,11 +128,29 @@
   position: relative;
 }
 
+.gallery-img-wrap {
+  position: relative;
+}
+
 .gallery-img {
   width: 100%;
   height: 200px;
   object-fit: cover;
   display: block;
+}
+
+.gallery-badge-new {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: var(--red);
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 0.2rem 0.6rem;
+  border-radius: 50px;
 }
 
 .placeholder-gem {

@@ -1,6 +1,45 @@
 import { useState } from 'react'
 import './Gallery.css'
 
+const newArrivals = [
+  { id: 1, label: 'Rose Quartz Faceted Mix Strand', category: 'Rose Quartz', image: '/gemstones/rose-quartz/IMG_2709.jpeg', shape: 'mixed faceted', color: 'pink-clear', size: '8-10mm', isNew: true },
+  { id: 2, label: 'Rose Quartz Heart Mix Strand', category: 'Rose Quartz', image: '/gemstones/rose-quartz/IMG_2710.jpeg', shape: 'heart mix', color: 'pink-clear', size: '10-12mm', isNew: true },
+  { id: 3, label: 'Rose Quartz Oval Strand', category: 'Rose Quartz', image: '/gemstones/rose-quartz/IMG_2721.jpeg', shape: 'oval', color: 'pink', size: '12-15mm', isNew: true },
+  { id: 4, label: 'Rose Quartz Tube Strand', category: 'Rose Quartz', image: '/gemstones/rose-quartz/IMG_2724.jpeg', shape: 'tube', color: 'pink', size: '10-14mm', isNew: true },
+  { id: 5, label: 'Rose Quartz Rondelle Strand', category: 'Rose Quartz', image: '/gemstones/rose-quartz/IMG_2725.jpeg', shape: 'rondelle', color: 'light pink', size: '12-15mm', isNew: true },
+  { id: 6, label: 'Rose Quartz Teardrop Strand', category: 'Rose Quartz', image: '/gemstones/rose-quartz/IMG_2726.jpeg', shape: 'teardrop', color: 'pink', size: '10-14mm', isNew: true },
+  { id: 7, label: 'Rose Quartz Rectangle Tube Strand', category: 'Rose Quartz', image: '/gemstones/rose-quartz/IMG_2731.jpeg', shape: 'rectangle tube', color: 'pink', size: '15-20mm', isNew: true },
+  { id: 8, label: 'Citrine Oval Strand', category: 'Citrine', image: '/gemstones/citrine/IMG_2698.jpeg', shape: 'oval', color: 'golden yellow', size: '10-14mm', isNew: true },
+  { id: 9, label: 'Citrine Nugget Strand', category: 'Citrine', image: '/gemstones/citrine/IMG_2701.jpeg', shape: 'nugget', color: 'champagne-gold', size: '10-15mm', isNew: true },
+  { id: 10, label: 'Citrine Bangle', category: 'Citrine', image: '/gemstones/citrine/IMG_2759.jpeg', shape: 'bangle', color: 'golden yellow', size: 'standard', isNew: true },
+  { id: 11, label: 'Smoky Quartz Faceted Oval Strand', category: 'Smoky Quartz', image: '/gemstones/smoky-quartz/IMG_2703.jpeg', shape: 'faceted oval', color: 'smoky brown', size: '15-20mm', isNew: true },
+  { id: 12, label: 'Smoky Quartz Heart Strand', category: 'Smoky Quartz', image: '/gemstones/smoky-quartz/IMG_2712.jpeg', shape: 'heart', color: 'dark smoky brown', size: '12-15mm', isNew: true },
+  { id: 13, label: 'Clear Quartz Nugget Strand', category: 'Clear Quartz', image: '/gemstones/clear-quartz/IMG_2693.jpeg', shape: 'nugget', color: 'clear-champagne', size: '15-20mm', isNew: true },
+  { id: 14, label: 'Amethyst Faceted Nugget Strand', category: 'Amethyst', image: '/gemstones/amethyst/IMG_2720.jpeg', shape: 'faceted nugget', color: 'lavender purple', size: '10-12mm', isNew: true },
+  { id: 15, label: 'Garnet Faceted Oval Strand', category: 'Garnet', image: '/gemstones/garnet/IMG_2722.jpeg', shape: 'faceted oval', color: 'deep red-brown', size: '8-10mm', isNew: true },
+  { id: 16, label: 'Black Onyx Faceted Oval Strand', category: 'Black Onyx', image: '/gemstones/black-onyx/IMG_2723.jpeg', shape: 'faceted oval', color: 'black', size: '12-15mm', isNew: true },
+  { id: 17, label: 'Black Onyx Cross Strand', category: 'Black Onyx', image: '/gemstones/black-onyx/IMG_2732.jpeg', shape: 'cross', color: 'black', size: '10mm', isNew: true },
+  { id: 18, label: 'Black Onyx Clover Strand', category: 'Black Onyx', image: '/gemstones/black-onyx/IMG_2734.jpeg', shape: 'clover', color: 'black', size: '12mm', isNew: true },
+  { id: 19, label: 'Black Onyx Bangle', category: 'Black Onyx', image: '/gemstones/black-onyx/IMG_2744.jpeg', shape: 'bangle', color: 'black-brown swirl', size: 'standard', isNew: true },
+  { id: 20, label: 'Carnelian Rondelle Strand', category: 'Carnelian', image: '/gemstones/carnelian/IMG_2730.jpeg', shape: 'rondelle', color: 'orange-red', size: '12-15mm', isNew: true },
+  { id: 21, label: "Tiger's Eye Tube Strand", category: "Tiger's Eye", image: '/gemstones/tigers-eye/IMG_2747.jpeg', shape: 'tube', color: 'golden brown-black', size: '15-20mm', isNew: true },
+  { id: 22, label: 'Aventurine Mixed Bracelet', category: 'Aventurine', image: '/gemstones/aventurine/IMG_2753.jpeg', shape: 'mixed round-nugget', color: 'green', size: '8-14mm', isNew: true },
+  { id: 23, label: 'Aventurine Tube Bracelet', category: 'Aventurine', image: '/gemstones/aventurine/IMG_2756.jpeg', shape: 'tube', color: 'green', size: '10-15mm', isNew: true },
+  { id: 24, label: 'Aventurine Rondelle Bracelet', category: 'Aventurine', image: '/gemstones/aventurine/IMG_2757.jpeg', shape: 'rondelle', color: 'green', size: '12-15mm', isNew: true },
+  { id: 25, label: 'Mother of Pearl Stick Strand', category: 'Mother of Pearl', image: '/gemstones/mother-of-pearl/IMG_2738.jpeg', shape: 'stick', color: 'iridescent cream-gray', size: '20-30mm', isNew: true },
+  { id: 26, label: 'Mother of Pearl Tile Strand', category: 'Mother of Pearl', image: '/gemstones/mother-of-pearl/IMG_2742.jpeg', shape: 'rectangle tile', color: 'iridescent cream', size: '15-25mm', isNew: true },
+  { id: 27, label: 'Crazy Lace Agate Nugget Strand', category: 'Crazy Lace Agate', image: '/gemstones/crazy-lace-agate/IMG_2700.jpeg', shape: 'nugget', color: 'multicolor cream-gray-red', size: '15-20mm', isNew: true },
+  { id: 28, label: 'Crazy Lace Agate Oval Strand', category: 'Crazy Lace Agate', image: '/gemstones/crazy-lace-agate/IMG_2733.jpeg', shape: 'oval', color: 'multicolor tan-gray', size: '12-18mm', isNew: true },
+  { id: 29, label: 'Zebra Jasper Rectangle Strand', category: 'Zebra Jasper', image: '/gemstones/zebra-jasper/IMG_2690.jpeg', shape: 'rectangle', color: 'black-white striped', size: '18-22mm', isNew: true },
+  { id: 30, label: 'Mookaite Jasper Faceted Strand', category: 'Mookaite Jasper', image: '/gemstones/mookaite-jasper/IMG_2743.jpeg', shape: 'faceted nugget', color: 'pink-gray-cream', size: '15-20mm', isNew: true },
+  { id: 31, label: 'Dyed Jade Bracelet', category: 'Dyed Jade', image: '/gemstones/dyed-jade/IMG_2745.jpeg', shape: 'cylinder', color: 'bright green', size: '12mm', isNew: true },
+  { id: 32, label: 'Dyed Jade Bracelet', category: 'Dyed Jade', image: '/gemstones/dyed-jade/IMG_2746.jpeg', shape: 'rondelle', color: 'deep red-maroon', size: '10-12mm', isNew: true },
+  { id: 33, label: 'Dyed Jade Bangle', category: 'Dyed Jade', image: '/gemstones/dyed-jade/IMG_2748.jpeg', shape: 'bangle', color: 'multicolor', size: 'standard', isNew: true },
+  { id: 34, label: 'Dyed Jade Bangle', category: 'Dyed Jade', image: '/gemstones/dyed-jade/IMG_2750.jpeg', shape: 'bangle', color: 'bright green', size: 'standard', isNew: true },
+  { id: 35, label: 'Dyed Jade Bangle', category: 'Dyed Jade', image: '/gemstones/dyed-jade/IMG_2752.jpeg', shape: 'bangle', color: 'multicolor faceted', size: 'standard', isNew: true },
+  { id: 36, label: 'Hematite Gold Heishi Strand', category: 'Hematite', image: '/hematite/IMG_2739_gold_heishi.jpeg', shape: 'heishi', color: 'gold metallic', size: '2mm', isNew: true },
+]
+
 const agates = [
   { id: 1, label: 'Alexa Agate Chevron Strand', category: 'Agate', image: '/gemstones/alexa_agate.jpg', shape: 'chevron', color: 'multicolor pastel', size: 'flat tile' },
   { id: 2, label: 'Alexa Agate Round Strand', category: 'Agate', image: '/gemstones/alexa_agate_bead.jpg', shape: 'round', color: 'multicolor pastel', size: '8mm' },
@@ -113,6 +152,7 @@ const jasper = [
 ]
 
 const allSections = [
+  { title: 'New Arrivals', subtitle: "This week's shipment — fresh gemstones, freshly in stock.", items: newArrivals, bg: 'linear-gradient(135deg, var(--mint, #e6f5ee) 0%, var(--sand-light, #f7f0e3) 100%)' },
   { title: 'Crystal Bracelets', subtitle: 'Each bracelet is crafted with authentic natural crystals and stones.', items: bracelets, bg: null },
   { title: 'Jade Charms', subtitle: 'Hand-carved natural jade animal charms.', items: charms, bg: 'var(--mint, #f0f9f4)' },
   { title: 'Jade Pendants', subtitle: 'Elegant hand-carved jade pendants.', items: pendants, bg: null },
@@ -197,7 +237,10 @@ export default function Gallery({ headerHeight = 80 }) {
                 <div className="gallery-grid">
                   {section.items.map(item => (
                     <div key={item.id} className="gallery-card">
-                      <img src={item.image} alt={item.label} className="gallery-img" loading="lazy" />
+                      <div className="gallery-img-wrap">
+                        <img src={item.image} alt={item.label} className="gallery-img" loading="lazy" />
+                        {item.isNew && <span className="gallery-badge-new">New</span>}
+                      </div>
                       <div className="gallery-card-info">
                         <h4>{item.label}</h4>
                         <span className="gallery-tag">{item.category}</span>
