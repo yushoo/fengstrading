@@ -46,7 +46,7 @@ function App() {
             height: `${BANNER_HEIGHT}px`,
             position: 'relative',
           }}>
-            <span>🚧 Our website is a work in progress — more updates and images coming soon!</span>
+            <span>🚧 Our website is a work in progress — more updates and images coming soon! (Last updated {__LAST_UPDATED__})</span>
             <button
               onClick={() => setBannerVisible(false)}
               style={{
