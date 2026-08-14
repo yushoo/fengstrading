@@ -64,17 +64,15 @@ const bracelets = [
   { id: 14, label: 'Dyed Jade Bracelet', category: 'Dyed Jade', image: '/gemstones/dyed-jade/IMG_2752.jpeg', shape: 'bracelet', color: 'multicolor faceted', size: 'standard', isNew: true },
 ]
 
-const charms = [
+const charmsAndPendants = [
   { id: 1, label: 'Jade Mouse Charm', category: 'Jade', image: '/charms/jade_animal_charms_9pcs.jpg', shape: 'carved animal', color: 'white-celadon', size: '15-20mm' },
   { id: 2, label: 'Jade Pig Charms', category: 'Jade', image: '/charms/jade_animal_charms_group.jpg', shape: 'carved animal', color: 'celadon green', size: '10-12mm' },
   { id: 3, label: 'Jade Chicken Charm', category: 'Jade', image: '/charms/jade_squirrel_pendant.jpg', shape: 'carved animal', color: 'white', size: '15mm' },
   { id: 4, label: 'Jade Rabbit Charms', category: 'Jade', image: '/charms/jade_rabbit_pendants.jpg', shape: 'carved animal', color: 'white', size: '10-12mm' },
   { id: 5, label: 'Jade Fish Charm', category: 'Jade', image: '/charms/jade_fish_charm.jpg', shape: 'carved double fish', color: 'white', size: '20mm' },
   { id: 6, label: 'Jade Assorted Charms', category: 'Jade', image: '/charms/jade_assorted_charms.jpg', shape: 'carved animal', color: 'celadon-white', size: '10-15mm' },
-]
-
-const pendants = [
-  { id: 1, label: 'Jade Pendant Collection', category: 'Jade', image: '/pendants/jade_pendant_collection.jpg', shape: 'carved', color: 'celadon-white', size: 'varied' },
+  { id: 7, label: 'Jade Pendant Collection', category: 'Jade', image: '/pendants/jade_pendant_collection.jpg', shape: 'carved', color: 'celadon-white', size: 'varied' },
+  { id: 8, label: 'Fancy Jasper Donut Pendant', category: 'Fancy Jasper', image: '/gemstones/fancy-jasper/fancy_jasper_donut.jpg', shape: 'donut', color: 'multicolor pastel green-pink-gray', size: '30mm', isNew: true },
 ]
 
 const bangles = [
@@ -123,6 +121,7 @@ const garnet = [
 
 const carnelian = [
   { id: 1, label: 'Carnelian Rondelle Strand', category: 'Carnelian', image: '/gemstones/carnelian/IMG_2730.jpeg', shape: 'rondelle', color: 'orange-red', size: '12-15mm', isNew: true },
+  { id: 2, label: 'Carnelian Hexagon Cut Strand', category: 'Carnelian', image: '/gemstones/carnelian/carnelian_hexagon.jpg', shape: 'hexagon cut', color: 'orange-red', size: '10mm', isNew: true },
 ]
 
 const tigersEye = [
@@ -170,6 +169,7 @@ const jasper = [
   { id: 7, label: 'Mookaite Jasper Faceted Strand', category: 'Mookaite Jasper', image: '/gemstones/mookaite-jasper/IMG_2743.jpeg', shape: 'faceted nugget', color: 'pink-gray-cream', size: '15-20mm', isNew: true },
   { id: 8, label: 'Kiwi Jasper Teardrop Strand', category: 'Kiwi Jasper', image: '/gemstones/kiwi-jasper/kiwi_jasper_teardrop.jpg', shape: 'teardrop', color: 'cream with gray-black spots', size: '10-14mm', isNew: true },
   { id: 9, label: 'Kiwi Jasper Round Strand', category: 'Kiwi Jasper', image: '/gemstones/kiwi-jasper/kiwi_jasper_round.jpg', shape: 'round', color: 'cream with gray-black spots', size: '8-10mm', isNew: true },
+  { id: 10, label: 'Fancy Jasper Donut Pendant', category: 'Fancy Jasper', image: '/gemstones/fancy-jasper/fancy_jasper_donut.jpg', shape: 'donut', color: 'multicolor pastel green-pink-gray', size: '30mm', isNew: true },
 ]
 
 const roseQuartz = [
@@ -215,37 +215,36 @@ const motherOfPearl = [
 ]
 
 const allSections = [
-  { title: 'Crystal Bracelets', subtitle: 'Each bracelet is crafted with authentic natural crystals and stones.', items: bracelets, bg: null },
-  { title: 'Jade Charms', subtitle: 'Hand-carved natural jade animal charms.', items: charms, bg: 'var(--mint, #f0f9f4)' },
-  { title: 'Jade Pendants', subtitle: 'Elegant hand-carved jade pendants.', items: pendants, bg: null },
-  { title: 'Bangles', subtitle: 'Bangles in jade, black onyx, and more.', items: bangles, bg: 'var(--mint, #f0f9f4)' },
-  { title: 'Pearls', subtitle: 'Beautiful natural pearl pieces.', items: pearls, bg: null },
-  { title: 'Mother of Pearl', subtitle: 'Iridescent mother of pearl strands.', items: motherOfPearl, bg: 'var(--mint, #f0f9f4)' },
-  { title: 'Turquoise', subtitle: 'Natural turquoise pieces.', items: turquoise, bg: null },
-  { title: 'Agate & Sardonyx', subtitle: 'Natural agate and sardonyx stones and beads.', items: agates, bg: 'var(--mint, #f0f9f4)' },
-  { title: 'Amazonite', subtitle: 'Natural amazonite strands in a variety of shapes and sizes.', items: amazonite, bg: null },
-  { title: 'Coral', subtitle: 'Natural coral strands in white, red, and orange.', items: coral, bg: 'var(--mint, #f0f9f4)' },
-  { title: 'Opal Collection', subtitle: 'Mexican fire opals, black opals, and white opals — each with their own stunning play of color.', items: opals, bg: null },
-  { title: 'Rose Quartz', subtitle: 'Rose quartz strands in a variety of shapes and cuts.', items: roseQuartz, bg: 'var(--mint, #f0f9f4)' },
-  { title: 'Citrine', subtitle: 'Golden citrine strands and bangles.', items: citrine, bg: null },
-  { title: 'Smoky Quartz', subtitle: 'Smoky quartz strands in faceted and heart shapes.', items: smokyQuartz, bg: 'var(--mint, #f0f9f4)' },
-  { title: 'Black Onyx', subtitle: 'Black onyx strands and bangles.', items: blackOnyx, bg: null },
-  { title: 'Aventurine', subtitle: 'Natural aventurine strands in a variety of shapes.', items: aventurine, bg: 'var(--mint, #f0f9f4)' },
-  { title: 'Labradorite', subtitle: 'Labradorite strands with a signature blue flash.', items: labradorite, bg: null },
-  { title: 'Sunstone', subtitle: 'Warm orange-brown sunstone strands.', items: sunstone, bg: 'var(--mint, #f0f9f4)' },
-  { title: 'Fluorite', subtitle: 'Multicolor fluorite strands.', items: fluorite, bg: null },
-  { title: 'Aquamarine', subtitle: 'Cool blue aquamarine strands.', items: aquamarine, bg: 'var(--mint, #f0f9f4)' },
-  { title: 'Kyanite', subtitle: 'Deep blue kyanite strands.', items: kyanite, bg: null },
-  { title: 'Clear Quartz', subtitle: 'Clear quartz strands.', items: clearQuartz, bg: 'var(--mint, #f0f9f4)' },
-  { title: 'Amethyst', subtitle: 'Lavender-purple amethyst strands.', items: amethyst, bg: null },
-  { title: 'Garnet', subtitle: 'Deep red-brown garnet strands.', items: garnet, bg: 'var(--mint, #f0f9f4)' },
-  { title: 'Carnelian', subtitle: 'Orange-red carnelian strands.', items: carnelian, bg: null },
-  { title: "Tiger's Eye", subtitle: "Golden brown tiger's eye strands.", items: tigersEye, bg: 'var(--mint, #f0f9f4)' },
-  { title: 'Snowflake Obsidian', subtitle: 'Black obsidian strands with white speckling.', items: snowflakeObsidian, bg: null },
-  { title: 'Hemimorphite', subtitle: 'Mint-teal hemimorphite strands.', items: hemimorphite, bg: 'var(--mint, #f0f9f4)' },
-  { title: 'Jade Strands', subtitle: 'Natural jade strands and Canadian jade in a variety of shapes and sizes.', items: jadeStrands, bg: null },
-  { title: 'Hematite', subtitle: 'Natural hematite strands in black, silver, and gold.', items: hematite, bg: 'var(--mint, #f0f9f4)' },
-  { title: 'Jasper', subtitle: 'Natural jasper strands in a variety of shapes and colors.', items: jasper, bg: null },
+  { title: 'Crystal Bracelets', items: bracelets, bg: null },
+  { title: 'Charms and Pendants', items: charmsAndPendants, bg: 'var(--mint, #f0f9f4)' },
+  { title: 'Bangles', items: bangles, bg: 'var(--mint, #f0f9f4)' },
+  { title: 'Pearls', items: pearls, bg: null },
+  { title: 'Mother of Pearl', items: motherOfPearl, bg: 'var(--mint, #f0f9f4)' },
+  { title: 'Turquoise', items: turquoise, bg: null },
+  { title: 'Agate & Sardonyx', items: agates, bg: 'var(--mint, #f0f9f4)' },
+  { title: 'Amazonite', items: amazonite, bg: null },
+  { title: 'Coral', items: coral, bg: 'var(--mint, #f0f9f4)' },
+  { title: 'Opal Collection', items: opals, bg: null },
+  { title: 'Rose Quartz', items: roseQuartz, bg: 'var(--mint, #f0f9f4)' },
+  { title: 'Citrine', items: citrine, bg: null },
+  { title: 'Smoky Quartz', items: smokyQuartz, bg: 'var(--mint, #f0f9f4)' },
+  { title: 'Black Onyx', items: blackOnyx, bg: null },
+  { title: 'Aventurine', items: aventurine, bg: 'var(--mint, #f0f9f4)' },
+  { title: 'Labradorite', items: labradorite, bg: null },
+  { title: 'Sunstone', items: sunstone, bg: 'var(--mint, #f0f9f4)' },
+  { title: 'Fluorite', items: fluorite, bg: null },
+  { title: 'Aquamarine', items: aquamarine, bg: 'var(--mint, #f0f9f4)' },
+  { title: 'Kyanite', items: kyanite, bg: null },
+  { title: 'Clear Quartz', items: clearQuartz, bg: 'var(--mint, #f0f9f4)' },
+  { title: 'Amethyst', items: amethyst, bg: null },
+  { title: 'Garnet', items: garnet, bg: 'var(--mint, #f0f9f4)' },
+  { title: 'Carnelian', items: carnelian, bg: null },
+  { title: "Tiger's Eye", items: tigersEye, bg: 'var(--mint, #f0f9f4)' },
+  { title: 'Snowflake Obsidian', items: snowflakeObsidian, bg: null },
+  { title: 'Hemimorphite', items: hemimorphite, bg: 'var(--mint, #f0f9f4)' },
+  { title: 'Jade Strands', items: jadeStrands, bg: null },
+  { title: 'Hematite', items: hematite, bg: 'var(--mint, #f0f9f4)' },
+  { title: 'Jasper', items: jasper, bg: null },
 ]
 
 function filter(items, query) {
@@ -311,7 +310,6 @@ export default function Gallery({ headerHeight = 80 }) {
               <div className="gallery-section-layout">
                 <div className="gallery-section-label">
                   <h2>{section.title}</h2>
-                  {section.subtitle && <p>{section.subtitle}</p>}
                 </div>
                 <div className="gallery-grid">
                   {section.items.map(item => (
