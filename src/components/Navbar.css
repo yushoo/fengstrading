@@ -1,4 +1,5 @@
 .navbar {
+  position: relative;
   height: 80px;
   background-color: var(--warm-white);
   border-bottom: 2px solid var(--peach);
@@ -44,6 +45,7 @@
   display: flex;
   flex-direction: column;
   line-height: 1.15;
+  white-space: nowrap;
 }
 
 .logo-main {
@@ -70,6 +72,7 @@
 }
 
 .navbar-links li a {
+  white-space: nowrap;
   font-weight: 700;
   font-size: 0.9rem;
   color: var(--text-mid);
@@ -141,13 +144,18 @@
 .hamburger.open span:nth-child(2) { opacity: 0; }
 .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-@media (max-width: 700px) {
+/* Tighter link spacing before switching to the hamburger menu */
+@media (max-width: 1000px) {
+  .navbar-links { gap: 1.25rem; }
+}
+
+@media (max-width: 900px) {
   .hamburger { display: flex; }
 
   .navbar-links {
     display: none;
     position: absolute;
-    top: 80px;
+    top: 100%;
     left: 0; right: 0;
     background-color: var(--warm-white);
     flex-direction: column;
@@ -161,5 +169,6 @@
 
   .navbar-links li { width: 100%; text-align: center; }
   .navbar-links li a { display: block; padding: 0.85rem 1rem; }
-  .nav-cta { margin: 0.5rem auto !important; display: inline-block; width: auto; }
+  .navbar-links li a::after { display: none; }
+  .navbar-links li .nav-cta { margin: 0.5rem auto; display: inline-block; padding: 0.6rem 1.6rem; }
 }

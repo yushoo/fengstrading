@@ -647,6 +647,7 @@
     text-align: center;
   }
   .hero-visual { display: none; }
+  .hero-sub    { margin-left: auto; margin-right: auto; }
   .hero-btns   { justify-content: center; }
 
   .features-grid {

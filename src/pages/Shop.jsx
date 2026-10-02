@@ -31,7 +31,7 @@ export default function Shop() {
         <p className="shop-intro">
           {SHOP_LIVE
             ? 'Genuine gemstone bracelets from our Houston shop. Add to cart and check out securely online.'
-            : "Here's a preview of the gemstone bracelets coming to our online shop. Want one now? Get in touch and we'll help you order."}
+            : "Here's a preview of the gemstone bracelets coming to our online shop."}
         </p>
         <div className="shop-grid">
           {PRODUCTS.map((id) => (
