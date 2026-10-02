@@ -81,7 +81,17 @@ const BUTTON_OPTIONS = {
   toggle: {},
 }
 
-export default function BuyButton({ productId }) {
+// Preview mode: same product card, but with the cart button removed so
+// nobody can reach checkout before the store is live.
+const PREVIEW_OPTIONS = {
+  ...BUTTON_OPTIONS,
+  product: {
+    ...BUTTON_OPTIONS.product,
+    contents: { button: false },
+  },
+}
+
+export default function BuyButton({ productId, preview = false }) {
   const nodeRef = useRef(null)
 
   useEffect(() => {
@@ -101,7 +111,7 @@ export default function BuyButton({ productId }) {
           id: productId,
           node: nodeRef.current,
           moneyFormat: '%24%7B%7Bamount%7D%7D',
-          options: BUTTON_OPTIONS,
+          options: preview ? PREVIEW_OPTIONS : BUTTON_OPTIONS,
         })
       })
       .catch((err) => {
@@ -111,7 +121,7 @@ export default function BuyButton({ productId }) {
     return () => {
       cancelled = true
     }
-  }, [productId])
+  }, [productId, preview])
 
   return <div ref={nodeRef} className="buy-button-slot" />
 }

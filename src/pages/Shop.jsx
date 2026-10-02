@@ -1,5 +1,9 @@
 import './Shop.css'
+import { Link } from 'react-router-dom'
 import BuyButton from '../components/BuyButton'
+
+// Flip to true once Shopify checkout is enabled.
+const SHOP_LIVE = false
 
 // Bracelet products published to the Buy Button channel (Oct 2026).
 // Each button renders its product's image, title, price and add-to-cart
@@ -22,18 +26,31 @@ export default function Shop() {
   return (
     <div className="shop-page">
       <div className="container">
+        {!SHOP_LIVE && <span className="shop-soon-badge">Online ordering coming soon</span>}
         <h1>Shop Bracelets</h1>
         <p className="shop-intro">
-          Genuine gemstone bracelets from our Houston shop. Add to cart and
-          check out securely online.
+          {SHOP_LIVE
+            ? 'Genuine gemstone bracelets from our Houston shop. Add to cart and check out securely online.'
+            : "Here's a preview of the gemstone bracelets coming to our online shop. Want one now? Get in touch and we'll help you order."}
         </p>
         <div className="shop-grid">
           {PRODUCTS.map((id) => (
             <div key={id} className="shop-grid-item">
-              <BuyButton productId={id} />
+              {!SHOP_LIVE && <span className="shop-ribbon">Coming soon</span>}
+              <BuyButton productId={id} preview={!SHOP_LIVE} />
+              {!SHOP_LIVE && (
+                <button type="button" className="shop-soon-button" disabled>
+                  Coming soon
+                </button>
+              )}
             </div>
           ))}
         </div>
+        {!SHOP_LIVE && (
+          <div className="shop-cta">
+            <Link to="/contact" className="btn btn-primary">Contact us to order</Link>
+          </div>
+        )}
       </div>
     </div>
   )
