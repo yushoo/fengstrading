@@ -1,3 +1,24 @@
 #root {
   min-height: 100vh;
 }
+
+/* Work-in-progress banner: fixed height, so keep the text on one line and
+   clear of the dismiss button; swap to a short message on narrow screens. */
+.wip-banner {
+  padding-right: 2.75rem !important;
+  padding-left: 2.75rem !important;
+}
+
+.wip-banner-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+}
+
+.wip-banner-short { display: none; }
+
+@media (max-width: 900px) {
+  .wip-banner-full { display: none; }
+  .wip-banner-short { display: inline; }
+}

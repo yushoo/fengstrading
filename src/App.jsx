@@ -46,8 +46,9 @@ function App() {
             justifyContent: 'center',
             height: `${BANNER_HEIGHT}px`,
             position: 'relative',
-          }}>
-            <span>🚧 Our website is a work in progress — more updates and images coming soon! (Last updated {__LAST_UPDATED__})</span>
+          }} className="wip-banner">
+            <span className="wip-banner-text wip-banner-full">🚧 Our website is a work in progress — more updates and images coming soon! (Last updated {__LAST_UPDATED__})</span>
+            <span className="wip-banner-text wip-banner-short">🚧 Work in progress · Updated {__LAST_UPDATED__}</span>
             <button
               onClick={() => setBannerVisible(false)}
               style={{
