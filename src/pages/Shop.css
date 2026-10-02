@@ -1,0 +1,117 @@
+/* Shop page - Shopify Buy Button experiment (feature branch) */
+
+.shop-page {
+  padding: 3rem 0 4rem;
+  background-color: var(--cream);
+}
+
+.shop-page h1 {
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+.shop-intro {
+  text-align: center;
+  color: var(--text-mid);
+  max-width: 620px;
+  margin: 0 auto 2.5rem;
+}
+
+.shop-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -20px;
+}
+
+.shop-grid-item {
+  flex: 0 0 calc(25% - 20px);
+  max-width: calc(25% - 20px);
+  margin-left: 20px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 900px) {
+  .shop-grid-item {
+    flex: 0 0 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 600px) {
+  .shop-grid {
+    margin-left: 0;
+  }
+  .shop-grid-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-bottom: 2.5rem;
+  }
+}
+
+/* Coming-soon preview (SHOP_LIVE = false) */
+
+.shop-page .container {
+  text-align: center;
+}
+
+.shop-soon-badge {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 0.35rem 1rem;
+  border-radius: 50px;
+  background-color: #2e8b6a;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.shop-grid {
+  text-align: left;
+}
+
+.shop-grid-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.shop-grid-item .buy-button-slot {
+  flex: 1;
+}
+
+.shop-ribbon {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 2;
+  padding: 0.25rem 0.7rem;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.92);
+  color: #1e6048;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  pointer-events: none;
+}
+
+.shop-soon-button {
+  align-self: center;
+  margin-top: 0.75rem;
+  padding: 0.7rem 1.6rem;
+  border: 2px dashed #2e8b6a;
+  border-radius: 50px;
+  background: transparent;
+  color: #2e8b6a;
+  font-family: Nunito, sans-serif;
+  font-weight: 700;
+  cursor: not-allowed;
+}
+
+.shop-cta {
+  margin-top: 1rem;
+}

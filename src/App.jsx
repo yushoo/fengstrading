@@ -15,6 +15,7 @@ import Gallery from './pages/Gallery'
 import Contact from './pages/Contact'
 import Builder from './pages/Builder'
 import NewsEvents from './pages/NewsEvents'
+import Shop from './pages/Shop'
 
 const BANNER_HEIGHT = 36
 
@@ -72,6 +73,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/gallery" element={<Gallery headerHeight={headerHeight} />} />
+          <Route path="/shop" element={<Shop />} />
           <Route path="/news" element={<NewsEvents />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/builder" element={<Builder />} />
